@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS Tutorial</title>
+
+    <!-- vue development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="title">{{ title }}</div>
+        <div v-bind:class="dynamicClass" v-bind:id="dynamicId"> Dynamically assign class and id for this div </div>
+
+        <br>
+
+        <a v-bind:[attribute_name]="url">Visit my Website</a>
+        <a v-on:[event_name]="runFunction">Some link</a>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
