@@ -25,6 +25,10 @@ a:hover {
     font-size: 2rem;
 }
 
+.p_2 {
+    padding: 0.5rem;
+}
+
 
 /* END Utility Classes */
 
@@ -123,7 +127,7 @@ a:hover {
 }
 
 
-/* END Componenet */
+/* END Component */
 
 * {
     margin: 0;
