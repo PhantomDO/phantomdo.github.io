@@ -3,9 +3,9 @@ const Home = {
     template: `<main id="home">
         <div class="about__me">
             <img src="./assets/img/avatar.svg" alt="">
-            <h1>John Doe</h1>
-            <h3>Python Expert</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h1>Donnovan Feuillastre</h1>
+            <h3>Junior Game Developper</h3>
+            <p>Currently in my last year of school, i'm looking for an internship as a Game Developper.</p>
     
             <div class="skills_projects_link">
                 <router-link to="/projects">Projects/Skills</router-link> 
