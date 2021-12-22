@@ -88,7 +88,7 @@ const Projects = {
                             <li v-for="skill in skills">{{skill}}</li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
             </section>
