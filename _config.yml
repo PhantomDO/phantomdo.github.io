@@ -49,32 +49,36 @@ linkedin_username: donnovan-feuillastre
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Donnovan and I'm a programmer who loves to solves systemics problems inside a project to push it further. 
-  I also have an interest in Game and Level Design, always eager to engage in discussions!
+  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features that delight players. 
+  Also, I've got an interest in Game and Level Design, always eager to engage in discussions!
 
 content:
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        company: PIECE OF CAKE STUDIOS
+        title: PIECE OF CAKE STUDIOS
         link: www.pieceofcake-studios.com
-        job_title: Engine Programmer
-        dates: Mai 2022 - March 2024
-        quote: >
-          Reference: **[Xavier Lemaitre](https://www.linkedin.com/in/xlemaitre/)**, CTO, PIECE OF CAKE STUDIOS
+        sub_title: Engine Programmer
+        caption: Mai 2022 - March 2024
+        additional_links:
+          - title: Xavier Lemaitre, CTO
+            icon: fas fa-chalkboard-teacher
+            url: linkedin.com/in/xlemaitre
         description: | # this will include new lines to allow paragraphs
           - **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
           - **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
           - **Debugging & QA**: Debugged and fixed issues reported by QA testers to ensure a smooth gameplay experience. 
           - **Development Assistance**: Assisted in the development of tools and plugins to streamline the game development process.
       - layout: left
-        company: ICONIK STUDIO
+        title: ICONIK STUDIO
         link: iconik.com
-        job_title: Gameplay Programmer
-        dates: April 2020 - August 2021
-        quote: >
-          Reference: **[Curtis Pelissier](https://www.linkedin.com/in/curtis-pelissier/)**, Generalist Programmer, ICONIK STUDIO
+        sub_title: Gameplay Programmer
+        caption: April 2020 - August 2021
+        additional_links:
+          - title: Curtis Pelissier, Lead Developer
+            icon: fas fa-chalkboard-teacher
+            url: linkedin.com/in/curtis-pelissier
         description: | # this will include new lines to allow paragraphs
           - **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
           - **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
@@ -84,36 +88,36 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        name: UNIVERSITE LYON II
-        dates: 2021 - 2022
-        qualification: Master in Computer Science / Video Game Engineering (GAMAGORA)
+        title: UNIVERSITE LYON II
+        caption: 2021 - 2022
+        sub_title: Master in Computer Science / Video Game Engineering (GAMAGORA)
         link: icom.univ-lyon2.fr/formation/master-2-informatique-gamagora-1
         #quote: >
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to handle all the programming tasks required to develop a video game, both for the game itself and for the software tools needed. Internship with Piece of Cake Studios (5 months).
       - layout: left
-        name: CNAM SAINT-ETIENNE
-        dates: 2020 - 2021
-        qualification: Bachelor in Computer Science
+        title: CNAM SAINT-ETIENNE
+        caption: 2020 - 2021
+        sub_title: Bachelor in Computer Science
         link: cnam-auvergnerhonealpes.com/licence-generale-informatique-g02501
         #quote: >
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to handle programming tasks required to develop software. Work-study with Iconik Studio (1 year).
       - layout: left
-        name: IUT LE PUY EN VELAY
-        dates: 2018 - 2020
-        qualification: DUT in Computer Science
+        title: IUT LE PUY EN VELAY
+        caption: 2018 - 2020
+        sub_title: DUT in Computer Science
         link: www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/iut-clermont-auvergne/but/but-informatique-le-puy
         #quote: >
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to design and develop 2D and 3D software by acquiring skills in programming and image synthesis using languages and libraries such as C++, C#, Open GL and Unity. Internship with Iconik Studio (3 months).
       - layout: left
-        name: BELLECOUR ECOLE
-        dates: 2015 – 2018
-        qualification: Bachelor in Game Design
+        title: BELLECOUR ECOLE
+        caption: 2015 – 2018
+        sub_title: Bachelor in Game Design
         link: www.bellecour.fr/formation/bachelor-game-development
         #quote: >
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
