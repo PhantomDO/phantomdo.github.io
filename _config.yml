@@ -142,15 +142,15 @@ content:
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
+      - layout: left
         title: Software & Tools
         description: | # this will include new lines to allow paragraphs
-          C#, C/C++, Perforce, Git, Unity Engine, Unreal Engine, Visual Studio, Rider, PIX, RenderDoc, Powershell, Gitlab
-      - layout: top-middle
+          C#, C/C++, Perforce, Git, Unity, Visual Studio, RenderDoc, Bash
+      - layout: left
         title: Video Game Specific
         description: | # this will include new lines to allow paragraphs
           Gameplay Systems, Debugging Games, Cross-Platform Development, Performance Optimization, Virtual Reality, Game Design Principles
-      - layout: top-middle
+      - layout: left
         title: Soft Skills
         description: | # this will include new lines to allow paragraphs
           Problem solving, Synthesis, Teamwork, Reliable, Curious
