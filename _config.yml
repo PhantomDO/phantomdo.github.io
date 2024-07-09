@@ -62,8 +62,7 @@ content:
         sub_title: Engine Programmer
         caption: Mai 2022 - March 2024
         additional_links:
-          - title: | 
-              **[Xavier Lemaitre](https://www.linkedin.com/in/xlemaitre/)**, CTO, PIECE OF CAKE STUDIOS
+          - title: Xavier Lemaitre, CTO
             icon: fas fa-chalkboard-teacher
             url: linkedin.com/in/xlemaitre
         description: | # this will include new lines to allow paragraphs
@@ -77,8 +76,7 @@ content:
         sub_title: Gameplay Programmer
         caption: April 2020 - August 2021
         additional_links:
-          - title: | 
-              **[Curtis Pelissier](https://www.linkedin.com/in/curtis-pelissier/)**, Generalist Programmer, ICONIK STUDIO
+          - title: Curtis Pelissier, Lead Developer
             icon: fas fa-chalkboard-teacher
             url: linkedin.com/in/curtis-pelissier
         description: | # this will include new lines to allow paragraphs
