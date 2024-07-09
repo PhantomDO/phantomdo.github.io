@@ -61,18 +61,11 @@ content:
         link: www.pieceofcake-studios.com
         sub_title: Engine Programmer
         caption: Mai 2022 - March 2024
-        # link_text: Project Website
         additional_links:
-           - title:  
-             sub_title: | 
+          - title: | 
               **[Xavier Lemaitre](https://www.linkedin.com/in/xlemaitre/)**, CTO, PIECE OF CAKE STUDIOS
-        #     icon: fab fa-github
-             url: linkedin.com/in/xlemaitre
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        #quote: >
-        #  This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+            icon: fas fa-chalkboard-teacher
+            url: linkedin.com/in/xlemaitre
         description: | # this will include new lines to allow paragraphs
           - **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
           - **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
@@ -83,13 +76,11 @@ content:
         link: iconik.com
         sub_title: Gameplay Programmer
         caption: April 2020 - August 2021
-        # link_text: Project Website
         additional_links:
-          - title:  
-              sub_title: | 
-                **[Curtis Pelissier](https://www.linkedin.com/in/curtis-pelissier/)**, Generalist Programmer, ICONIK STUDIO
-          #     icon: fab fa-github
-              url: linkedin.com/in/curtis-pelissier
+          - title: | 
+              **[Curtis Pelissier](https://www.linkedin.com/in/curtis-pelissier/)**, Generalist Programmer, ICONIK STUDIO
+            icon: fas fa-chalkboard-teacher
+            url: linkedin.com/in/curtis-pelissier
         description: | # this will include new lines to allow paragraphs
           - **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
           - **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
@@ -107,7 +98,6 @@ content:
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to handle all the programming tasks required to develop a video game, both for the game itself and for the software tools needed. Internship with Piece of Cake Studios (5 months).
-
       - layout: left
         title: CNAM SAINT-ETIENNE
         caption: 2020 - 2021
@@ -117,7 +107,6 @@ content:
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to handle programming tasks required to develop software. Work-study with Iconik Studio (1 year).
-      
       - layout: left
         title: IUT LE PUY EN VELAY
         caption: 2018 - 2020
@@ -127,7 +116,6 @@ content:
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
           Being able to design and develop 2D and 3D software by acquiring skills in programming and image synthesis using languages and libraries such as C++, C#, Open GL and Unity. Internship with Iconik Studio (3 months).
-
       - layout: left
         title: BELLECOUR ECOLE
         caption: 2015 – 2018
