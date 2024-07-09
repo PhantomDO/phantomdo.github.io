@@ -74,10 +74,10 @@ content:
         #quote: >
         #  This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
-          **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
-          **Debugging & QA**: Debugged and fixed issues reported by QA testers to ensure a smooth gameplay experience. 
-          **Development Assistance**: Assisted in the development of tools and plugins to streamline the game development process.
+          - **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
+          - **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
+          - **Debugging & QA**: Debugged and fixed issues reported by QA testers to ensure a smooth gameplay experience. 
+          - **Development Assistance**: Assisted in the development of tools and plugins to streamline the game development process.
       - layout: left
         title: ICONIK STUDIO
         link: iconik.com
@@ -91,9 +91,9 @@ content:
           #     icon: fab fa-github
               url: linkedin.com/in/curtis-pelissier
         description: | # this will include new lines to allow paragraphs
-          **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
-          **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
-          **Performance Optimization**: Optimized game performance for Meta Quest 1 & 2.
+          - **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
+          - **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
+          - **Performance Optimization**: Optimized game performance for Meta Quest 1 & 2.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
