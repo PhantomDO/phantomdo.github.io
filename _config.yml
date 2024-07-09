@@ -6,34 +6,34 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
+name: Donnovan Feuillastre
+title: Game Programmer
+email: donnovan42320@gmail.com
 website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+# twitter_username: facespics
+github_username:  PhantomDO
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+# instagram_username: jameswgrant
+linkedin_username: donnovan-feuillastre
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
 additional_links:
-- title: itsgoingto.be
+- title: France
   icon: fas fa-globe
-  url: https://www.itsgoingto.be
+#  url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -48,69 +48,117 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features that delight players. 
+  Also, I've got an interest in Game and Level Design, always eager to engage in discussions!
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        title: PIECE OF CAKE STUDIOS
+        link: pieceofcake-studios.com
+        sub_title: Engine Programmer
+        caption: Mai 2022 - March 2024
+        # link_text: Project Website
+        additional_links:
+           - title:  
+             sub_title: | 
+              **[Xavier Lemaitre](https://www.linkedin.com/in/xlemaitre/)**, CTO, PIECE OF CAKE STUDIOS
+        #     icon: fab fa-github
+             url: linkedin.com/in/xlemaitre
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        #quote: >
+        #  This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
+          **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
+          **Debugging & QA**: Debugged and fixed issues reported by QA testers to ensure a smooth gameplay experience. 
+          **Development Assistance**: Assisted in the development of tools and plugins to streamline the game development process.
+      - layout: left
+        title: ICONIK STUDIO
+        link: iconik.com
+        sub_title: Gameplay Programmer
+        caption: April 2020 - August 2021
+        # link_text: Project Website
+        additional_links:
+          - title:  
+              sub_title: | 
+                **[Curtis Pelissier](https://www.linkedin.com/in/curtis-pelissier/)**, Generalist Programmer, ICONIK STUDIO
+          #     icon: fab fa-github
+              url: linkedin.com/in/curtis-pelissier
+        description: | # this will include new lines to allow paragraphs
+          **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
+          **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
+          **Performance Optimization**: Optimized game performance for Meta Quest 1 & 2.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        title: UNIVERSITE LYON II
+        caption: 2021 - 2022
+        sub_title: Master in Computer Science / Video Game Engineering (GAMAGORA)
+        link: icom.univ-lyon2.fr/formation/master-2-informatique-gamagora-1
+        #quote: >
+        #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          Being able to handle all the programming tasks required to develop a video game, both for the game itself and for the software tools needed. Internship with Piece of Cake Studios (5 months).
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: CNAM SAINT-ETIENNE
+        caption: 2020 - 2021
+        sub_title: Bachelor in Computer Science
+        link: cnam-auvergnerhonealpes.com/licence-generale-informatique-g02501
+        #quote: >
+        #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Being able to handle programming tasks required to develop software. Work-study with Iconik Studio (1 year).
+      
+      - layout: left
+        title: IUT LE PUY EN VELAY
+        caption: 2018 - 2020
+        sub_title: DUT in Computer Science
+        link: www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/iut-clermont-auvergne/but/but-informatique-le-puy
+        #quote: >
+        #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Being able to design and develop 2D and 3D software by acquiring skills in programming and image synthesis using languages and libraries such as C++, C#, Open GL and Unity. Internship with Iconik Studio (3 months).
 
-  - title: A Little More About Me
+      - layout: left
+        title: BELLECOUR ECOLE
+        caption: 2015 – 2018
+        sub_title: Bachelor in Game Design
+        link: www.bellecour.fr/formation/bachelor-game-development
+        #quote: >
+        #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Being able to make Game/Level Design documents and prototype games and levels with Unity 5 and Unreal Engine 4.
+
+
+  - title: Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Software & Tools
+        description: | # this will include new lines to allow paragraphs
+          C#, C/C++, Perforce, Git, Unity Engine, Unreal Engine, Visual Studio, Rider, PIX, RenderDoc, Powershell, Gitlab
+      - layout: top-middle
+        title: Video Game Specific
+        description: | # this will include new lines to allow paragraphs
+          Gameplay Systems, Debugging Games, Cross-Platform Development, Performance Optimization, Virtual Reality, Game Design Principles
+      - layout: top-middle
+        title: Soft Skills
+        description: | # this will include new lines to allow paragraphs
+          Problem solving, Synthesis, Teamwork, Reliable, Curious
+
+  - title: Languages
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      - **French**: Native
+      - **English**: Fluent (Linguaskill C1)
 
 # Footer
 footer_show_references: true
