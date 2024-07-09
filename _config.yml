@@ -9,7 +9,8 @@ version: 2
 name: Donnovan Feuillastre
 title: Game Programmer
 email: donnovan42320@gmail.com
-website: www.github.com/sproogen/resume-theme
+location: France
+#website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -30,9 +31,9 @@ linkedin_username: donnovan-feuillastre
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-- title: France
-  icon: fas fa-globe
+# additional_links:
+# - title: France
+#   icon: fas fa-globe
 #  url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
@@ -57,7 +58,7 @@ content:
     content:
       - layout: left
         title: PIECE OF CAKE STUDIOS
-        link: pieceofcake-studios.com
+        link: www.pieceofcake-studios.com
         sub_title: Engine Programmer
         caption: Mai 2022 - March 2024
         # link_text: Project Website
