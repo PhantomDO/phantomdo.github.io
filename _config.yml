@@ -8,7 +8,7 @@ version: 2
 # Personal info
 name: Donnovan Feuillastre
 title: Game Programmer
-email: donnovan42320@gmail.com
+email: donnovan.feuillastre@protonmail.com
 location: France
 #website: www.github.com/sproogen/resume-theme
 
@@ -57,6 +57,18 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: WANADEV STUDIO
+        link: www.wanadevstudio.com
+        sub_title: Game Developer
+        caption: September 2024 - December 2024
+        additional_links:
+          - title: Benoit Djerigian, Lead Developer
+            icon: fas fa-chalkboard-teacher
+            url: linkedin.com/in/bdjerigian/
+        description: | # this will include new lines to allow paragraphs
+          - Ported **[Propagation: Paradise Hotel](https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/)** to the Omni One platform, ensuring proper functionality. 
+          - Contributed to optimization and architecture rework for **[Vestiges: Fallen Tribes](https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/)**.
+      - layout: left
         title: PIECE OF CAKE STUDIOS
         link: www.pieceofcake-studios.com
         sub_title: Engine Programmer
@@ -66,10 +78,9 @@ content:
             icon: fas fa-chalkboard-teacher
             url: linkedin.com/in/xlemaitre
         description: | # this will include new lines to allow paragraphs
-          - **Contributed to [Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)**: Implemented new gameplay systems and optimized the game. 
-          - **Porting [My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)**: Integrated SDK features for Switch, PS4, PS5, and Xbox. 
-          - **Debugging & QA**: Debugged and fixed issues reported by QA testers to ensure a smooth gameplay experience. 
-          - **Development Assistance**: Assisted in the development of tools and plugins to streamline the game development process.
+          - Contributed to **[Fantastic Haven](https://store.steampowered.com/app/2556470/Fantastic_Haven/)** by implementing new gameplay systems and optimizing the game. 
+          - Ported **[My Fantastic Ranch](https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/) & [Hacktag](https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148)** on consoles and fixed issues reported by the QA team. 
+          - Assisted with tools and plugins development and integrated SDK features for Switch, PS4, PS5, and Xbox.
       - layout: left
         title: ICONIK STUDIO
         link: iconik.com
@@ -80,9 +91,9 @@ content:
             icon: fas fa-chalkboard-teacher
             url: linkedin.com/in/curtis-pelissier
         description: | # this will include new lines to allow paragraphs
-          - **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**: Implemented new enemy AI behavior and integrated new gameplay systems. 
-          - **AI Customization Tools**: Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
-          - **Performance Optimization**: Optimized game performance for Meta Quest 1 & 2.
+          - Implemented new enemy AI behavior and integrated new gameplay systems for **[KINGPONG](https://store.steampowered.com/app/1501390/KING_PONG/)**
+          - Developed tools for AI behavior customization using visual scripting (Behavior Tree). 
+          - Optimized game performance for Meta Quest 1 & 2.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
