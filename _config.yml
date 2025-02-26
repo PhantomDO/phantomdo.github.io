@@ -140,13 +140,21 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Coding Languages
+        description: | # this will include new lines to allow paragraphs
+          C#, C/C++, Shader, Bash, Markdown
+      - layout: left
         title: Software & Tools
         description: | # this will include new lines to allow paragraphs
-          C#, C/C++, Perforce, Git, Unity, Visual Studio, RenderDoc, Bash
+          Perforce, Git, Visual Studio, Rider, RenderDoc         
+      - layout: left
+        title: Game Engines
+        description: | # this will include new lines to allow paragraphs
+          Unity, Unreal Engine 5
       - layout: left
         title: Video Game Specific
         description: | # this will include new lines to allow paragraphs
-          Gameplay Systems, Debugging Games, Cross-Platform Development, Performance Optimization, Virtual Reality, Game Design Principles
+          Gameplay Systems, VR, 3C, GOAP, Behavior Trees, Debugging, Cross-Platform Development, Performance Optimization
       - layout: left
         title: Soft Skills
         description: | # this will include new lines to allow paragraphs
