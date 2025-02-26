@@ -49,8 +49,10 @@ linkedin_username: donnovan-feuillastre
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features that delight players. 
-  Also, I've got an interest in Game and Level Design, always eager to engage in discussions!
+  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features.
+  I’ve worked on a variety of projects, focusing on creating solid gameplay systems that truly enhanced the player experience. 
+  Collaborating with a team to improve game mechanics and provide technical support has always been something I truly enjoy.  
+  I also have an interest in Game and Level Design!
 
 content:
   - title: Experience # Title for the section
