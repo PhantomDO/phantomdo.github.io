@@ -49,13 +49,7 @@ linkedin_username: donnovan-feuillastre
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features.
-
-  I’ve worked on a variety of projects, focusing on creating solid gameplay systems that truly enhanced the player experience. 
-  
-  Collaborating with a team to improve game mechanics and provide technical support has always been something I truly enjoy.  
-  
-  I also have an interest in Game and Level Design!
+  Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features. I’ve worked on a variety of projects, focusing on creating solid gameplay systems that truly enhanced the player experience. Collaborating with a team to improve game mechanics and provide technical support has always been something I truly enjoy. I also have an interest in Game and Level Design!
 
 content:
   - title: Experience # Title for the section
@@ -151,7 +145,7 @@ content:
       - layout: left
         title: Software & Tools
         description: | # this will include new lines to allow paragraphs
-          Perforce, Git, Visual Studio, Rider, RenderDoc         
+          Perforce, Git, Gitlab, Visual Studio, Rider, RenderDoc         
       - layout: left
         title: Game Engines
         description: | # this will include new lines to allow paragraphs
