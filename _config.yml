@@ -17,6 +17,7 @@ darkmode: false
 
 # Social links
 # twitter_username: facespics
+itch_username: PhantomDO
 github_username:  PhantomDO
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
@@ -52,6 +53,34 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Donnovan and I'm a Game Programmer with a passion for creating engaging gameplay features. I’ve worked on a variety of projects, focusing on creating solid gameplay systems that truly enhanced the player experience. Collaborating with a team to improve game mechanics and provide technical support has always been something I truly enjoy. I also have an interest in Game and Level Design!
 
 content:
+  - title: Games I worked on
+    layout: list
+    content:
+      - layout: left
+        title: Propagation: Paradise Hotel
+        link: https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/
+        video: https://www.youtube.com/watch?v=54sgUziHtE8&pp=ygUacHJvcGFnYXRpb24gcGFyYWRpc2UgaG90ZWw%3D # Add the video link here
+      - layout: left
+        title: Vestiges: Fallen Tribes
+        link: https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/
+        video: https://www.youtube.com/watch?v=9GRzE-XLe4k&pp=ygUWdmVzdGlnZXMgZmFsbGVuIHRyaWJlcw%3D%3D # Add the video link here
+      - layout: left
+        title: Fantastic Haven
+        link: https://store.steampowered.com/app/2556470/Fantastic_Haven/
+        video: https://www.youtube.com/watch?v=ce8aAG7YkpI&pp=ygUPZmFudGFzdGljIGhhdmVu0gcJCU8JAYcqIYzv # Add the video link here
+      - layout: left
+        title: My Fantastic Ranch
+        link: https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/
+        video: https://www.youtube.com/watch?v=EnKi68WnPP4&pp=ygUSbXkgZmFudGFzdGljIHJhbmNo # Add the video link here
+      - layout: left
+        title: Hacktag
+        link: https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148
+        video: https://www.youtube.com/watch?v=CufeyuYQnEA&pp=ygUPaGFja3RhZyB0cmFpbGVy # Add the video link here
+      - layout: left
+        title: KINGPONG
+        link: https://store.steampowered.com/app/1501390/KING_PONG/
+        video: https://www.youtube.com/watch?v=2yq0NH2BFLU&pp=ygUQa2luZ3BvbmcgdHJhaWxlcg%3D%3D # Add the video link here
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
