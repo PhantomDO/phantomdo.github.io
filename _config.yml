@@ -57,29 +57,29 @@ content:
     layout: list
     content:
       - layout: left
-        title: Propagation: Paradise Hotel
-        link: https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/
-        video: https://www.youtube.com/watch?v=54sgUziHtE8&pp=ygUacHJvcGFnYXRpb24gcGFyYWRpc2UgaG90ZWw%3D # Add the video link here
+        title: "Propagation: Paradise Hotel"
+        link: "https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/"
+        video: "https://www.youtube.com/watch?v=54sgUziHtE8&pp=ygUacHJvcGFnYXRpb24gcGFyYWRpc2UgaG90ZWw%3D"
       - layout: left
-        title: Vestiges: Fallen Tribes
-        link: https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/
-        video: https://www.youtube.com/watch?v=9GRzE-XLe4k&pp=ygUWdmVzdGlnZXMgZmFsbGVuIHRyaWJlcw%3D%3D # Add the video link here
+        title: "Vestiges: Fallen Tribes"
+        link: "https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/"
+        video: "https://www.youtube.com/watch?v=9GRzE-XLe4k&pp=ygUWdmVzdGlnZXMgZmFsbGVuIHRyaWJlcw%3D%3D"
       - layout: left
-        title: Fantastic Haven
-        link: https://store.steampowered.com/app/2556470/Fantastic_Haven/
-        video: https://www.youtube.com/watch?v=ce8aAG7YkpI&pp=ygUPZmFudGFzdGljIGhhdmVu0gcJCU8JAYcqIYzv # Add the video link here
+        title: "Fantastic Haven"
+        link: "https://store.steampowered.com/app/2556470/Fantastic_Haven/"
+        video: "https://www.youtube.com/watch?v=ce8aAG7YkpI&pp=ygUPZmFudGFzdGljIGhhdmVu0gcJCU8JAYcqIYzv"
       - layout: left
-        title: My Fantastic Ranch
-        link: https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/
-        video: https://www.youtube.com/watch?v=EnKi68WnPP4&pp=ygUSbXkgZmFudGFzdGljIHJhbmNo # Add the video link here
+        title: "My Fantastic Ranch"
+        link: "https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/"
+        video: "https://www.youtube.com/watch?v=EnKi68WnPP4&pp=ygUSbXkgZmFudGFzdGljIHJhbmNo"
       - layout: left
-        title: Hacktag
-        link: https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148
-        video: https://www.youtube.com/watch?v=CufeyuYQnEA&pp=ygUPaGFja3RhZyB0cmFpbGVy # Add the video link here
+        title: "Hacktag"
+        link: "https://store.steampowered.com/app/622770/Hacktag/?curator_clanid=35988148"
+        video: "https://www.youtube.com/watch?v=CufeyuYQnEA&pp=ygUPaGFja3RhZyB0cmFpbGVy"
       - layout: left
-        title: KINGPONG
-        link: https://store.steampowered.com/app/1501390/KING_PONG/
-        video: https://www.youtube.com/watch?v=2yq0NH2BFLU&pp=ygUQa2luZ3BvbmcgdHJhaWxlcg%3D%3D # Add the video link here
+        title: "KINGPONG"
+        link: "https://store.steampowered.com/app/1501390/KING_PONG/"
+        video: "https://www.youtube.com/watch?v=2yq0NH2BFLU&pp=ygUQa2luZ3BvbmcgdHJhaWxlcg%3D%3D"
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
