@@ -54,7 +54,7 @@ about_content: | # this will include new lines to allow paragraphs
 
 content:
   - title: Games I worked on
-    layout: list
+    layout: grid
     content:
       - layout: left
         title: "Propagation: Paradise Hotel"
