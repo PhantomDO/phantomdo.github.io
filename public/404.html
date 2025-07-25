@@ -8,9 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Meta data -->
-<title>404 Page not found | My New Hugo Site</title>
-<meta name="title" content="404 Page not found | My New Hugo Site">
+<title>404 Page not found | HUGO MyPortfolio Theme</title>
+<meta name="title" content="404 Page not found | HUGO MyPortfolio Theme">
 
+    <meta name="author" content="&lt;AUTHOR&gt;">
+
+
+    <meta name="description" content="&lt;DESCRIPTION&gt;">
 
 
 <base href="http://localhost:1313/">
@@ -18,8 +22,8 @@
 <meta name="generator" content="Hugo 0.148.1">
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="http://localhost:1313/" type="image/x-icon" />
-<link rel="icon" href="http://localhost:1313/" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost:1313/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://localhost:1313/favicon.ico" type="image/x-icon" />
 <!-- Bootstrap -->
 <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/css/bootstrap.min.css" type="text/css">
 <!-- CSS Plugins -->
@@ -36,7 +40,11 @@
 <!-- Theme CSS -->
 <link rel="stylesheet" href="http://localhost:1313/css/default.css" type="text/css">
 
+    <link rel="stylesheet" href="http://localhost:1313/css/custom_vars.css" type="text/css">
+
 <link rel="stylesheet" href="http://localhost:1313/css/theme.css" type="text/css">
+
+    <link rel="stylesheet" href="http://localhost:1313/css/custom.css" type="text/css">
 
 
     </head>
@@ -45,10 +53,117 @@
         
 
     
+        <!-- NAVIGATION -->
+        
+        <nav id="navNotFixed" class="navbar navbar-default">
+        
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                        <a class="navbar-brand page-scroll" href="#">YOUR BRAND</a>
+                    
+                </div>
+                <!-- Get the navigation menu entries and create the links -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        
+                            
+                        
+                            
+                                <li>
+                                    <a class="page-scroll" id=nav_about href=#about>ABOUT</a>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a class="page-scroll" id=nav_services href=#services>SERVICES</a>
+                                </li>
+                            
+                        
+                            
+                                <li>
+                                    <a class="page-scroll" id=nav_skills href=#skills>SKILLS</a>
+                                </li>
+                            
+                        
+                            
+                                
+                                
+                                    
+                                    
+                                        
+                                            <li>
+                                                <a class="page-scroll" href="#projects_pro">PROFESSIONAL</a>
+                                            </li>
+                                        
+                                    
+                                        
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a class="page-scroll" href="#projects_perso">PERSONAL</a>
+                                            </li>
+                                        
+                                    
+                                
+                            
+                        
+                            
+                                <li>
+                                    <a class="page-scroll" id=nav_contact href=#contact>CONTACT</a>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    
 
 
 
         <section class="section" id="p404">
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center anim-wrapper">
+                            
+                                <div class="page404-image" title="image: 404.jpg"
+                                        style="background-image: url('http://localhost:1313/images/404.jpg');"
+                                    >
+                                </div>
+                            
+                            <div class="page404-title anim zoomIn">
+                                <h1>404</h1>
+                            </div>
+                            <div class="page404-content">
+                                <p>OOPS, PAGE NOT FOUND!</p>
+                            </div>
+                            <hr class="primary">
+                            <a href="#" class="btn btn-primary">
+                                
+                                    BACK HOME
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
             
         </section>
 
