@@ -20,6 +20,9 @@ Publishing. On y incarne les Anciens d'un continent fantastique : il faut secour
 magiques en danger, construire des sanctuaires pour les soigner, et gérer une ressource appelée
 éther afin de rendre sa magie au monde.
 
+Le jeu n'est pas encore sorti — Steam l'annonce pour le T4 2026. Mon travail dessus a été réalisé
+pendant mon passage au studio, entre 2022 et 2024.
+
 ## Mes contributions
 
 - Implémentation de **nouveaux systèmes de gameplay**.

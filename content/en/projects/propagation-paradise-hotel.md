@@ -7,7 +7,7 @@ studio: "Wanadev Studio"
 studio_url: "https://www.wanadevstudio.com"
 role: "Game Developer"
 year: "2024"
-engine: "Unreal Engine 5"
+engine: "Unreal Engine 4"
 platforms: ["Omni One", "PC VR", "Meta Quest"]
 tech: ["C++", "Blueprint", "VR", "Profiling"]
 store: "https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/"

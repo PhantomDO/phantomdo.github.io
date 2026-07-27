@@ -20,6 +20,9 @@ Publishing. You play as the Elders of a fantasy continent, rescuing endangered m
 building sanctuaries to rehabilitate them, and managing a resource called ether to restore magic
 to the world.
 
+The game has not shipped yet — Steam currently lists it for Q4 2026. My work on it was done
+during my time at the studio, between 2022 and 2024.
+
 ## My contributions
 
 - Implemented **new gameplay systems** for the game.

@@ -31,7 +31,7 @@ experience:
       - "Adaptation des mécaniques de gameplay de **Propagation: Paradise Hotel** pour le tapis VR **Omni One**, dans les contraintes du matériel."
       - "Optimisation des performances de **Vestiges: Fallen Tribes** par profilage des composants, avec un gain de stabilité du framerate."
       - "Collaboration avec les équipes design et QA pour garantir la cohérence des features et la qualité du code."
-    tech: [Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profilage, Git]
+    tech: [Unreal Engine 4, Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profilage, Git]
 
   - company: PIECE OF CAKE STUDIOS
     url: https://www.pieceofcake-studios.com

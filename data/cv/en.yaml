@@ -31,7 +31,7 @@ experience:
       - "Adapted the gameplay mechanics of **Propagation: Paradise Hotel** for the **Omni One** VR treadmill, within the constraints of the hardware."
       - "Optimised **Vestiges: Fallen Tribes** through component profiling, improving frame stability."
       - "Worked with the design and QA teams to keep features consistent and code quality high."
-    tech: [Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profiling, Git]
+    tech: [Unreal Engine 4, Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profiling, Git]
 
   - company: PIECE OF CAKE STUDIOS
     url: https://www.pieceofcake-studios.com
