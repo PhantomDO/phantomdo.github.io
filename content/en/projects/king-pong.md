@@ -10,6 +10,7 @@ engine: "Unity"
 platforms: ["PC VR", "Meta Quest 1", "Meta Quest 2"]
 tech: ["C#", "AI systems", "Networking", "Mirror", "PlayFab", "VR"]
 store: "https://store.steampowered.com/app/1501390/KING_PONG/"
+cover: "king-pong.jpg"
 ---
 
 ## The game

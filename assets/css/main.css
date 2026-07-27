@@ -721,6 +721,7 @@ a.tag:hover {
   border: 1px solid var(--border);
   margin-block-end: var(--sp-6);
   width: 100%;
+  max-width: 616px; /* the source capsule's native width — never upscale */
 }
 
 /* ---------- Prose ---------- */

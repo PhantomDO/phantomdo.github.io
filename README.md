@@ -53,6 +53,10 @@ cover: "game-name.jpg"   # optional, file in assets/images/projects/
 `cover:`. Hugo resizes and converts it to WebP at build time. Without a cover, the card renders
 a gradient with the game's initials.
 
+The current covers are Steam store capsules (`capsule_616x353.jpg`), 616px wide — the templates
+target exactly that width so nothing is upscaled. They belong to the games' studios and
+publishers; see `LICENSE`.
+
 **Change the e-mail or social links.** `hugo.toml`, under `[params]`.
 
 ## Deployment

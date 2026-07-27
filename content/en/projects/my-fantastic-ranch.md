@@ -10,6 +10,7 @@ engine: "Unity"
 platforms: ["Windows", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "Console SDKs", "CI/CD", "Perforce"]
 store: "https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/"
+cover: "my-fantastic-ranch.jpg"
 ---
 
 ## The game

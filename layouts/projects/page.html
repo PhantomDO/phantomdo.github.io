@@ -13,7 +13,7 @@
     <div>
       {{ with .Params.cover }}
         {{ with resources.Get (printf "images/projects/%s" .) }}
-          {{ $img := .Resize "1200x q85 webp" }}
+          {{ $img := .Resize "616x q85 webp" }}
           <img class="project-cover" src="{{ $img.RelPermalink }}"
                width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Title }}">
         {{ end }}

@@ -11,6 +11,7 @@ engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]
 tech: ["C#", "Shaders", "Systèmes de gameplay", "Optimisation", "Simulation"]
 store: "https://store.steampowered.com/app/2556470/Fantastic_Haven/"
+cover: "fantastic-haven.jpg"
 ---
 
 ## Le jeu

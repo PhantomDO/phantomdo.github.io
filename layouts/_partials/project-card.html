@@ -3,7 +3,8 @@
   <div class="card__media{{ if not $p.Params.cover }} card__media--fallback{{ end }}">
     {{- with $p.Params.cover -}}
       {{- with resources.Get (printf "images/projects/%s" .) -}}
-        {{- $img := .Resize "720x q82 webp" -}}
+        {{- /* Steam capsules are 616px wide; asking for more only upscales. */ -}}
+        {{- $img := .Resize "616x q82 webp" -}}
         <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"
              alt="{{ $p.Title }}" loading="lazy" decoding="async">
       {{- end -}}

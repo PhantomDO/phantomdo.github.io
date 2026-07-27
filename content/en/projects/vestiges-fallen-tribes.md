@@ -10,6 +10,7 @@ engine: "Unreal Engine 5"
 platforms: ["PC", "VR (OpenXR / Meta)"]
 tech: ["C++", "Blueprint", "Profiling", "Optimisation", "VR"]
 store: "https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/"
+cover: "vestiges-fallen-tribes.jpg"
 ---
 
 ## The game

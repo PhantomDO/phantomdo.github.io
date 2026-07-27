@@ -10,6 +10,7 @@ engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "SDK consoles", "Réseau coop", "CI/CD"]
 store: "https://store.steampowered.com/app/622770/Hacktag/"
+cover: "hacktag.jpg"
 ---
 
 ## Le jeu
