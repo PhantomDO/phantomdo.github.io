@@ -14,9 +14,12 @@
     {{ with .Content }}<div class="prose" style="margin-block-start: var(--sp-4)">{{ . }}</div>{{ end }}
 
     <div class="cv-actions no-print">
-      <button class="btn btn--primary" type="button" onclick="window.print()">
-        {{ partial "icon.html" "print" }} {{ i18n "cv_download" }}
-      </button>
+      {{ with site.Params.cvUrl }}
+        <a class="btn btn--primary" href="{{ . }}"
+           {{ if hasPrefix . "http" }}rel="noopener" target="_blank"{{ else }}download{{ end }}>
+          {{ partial "icon.html" "download" }} {{ i18n "cv_download" }}
+        </a>
+      {{ end }}
       {{ partial "social.html" . }}
     </div>
   </header>

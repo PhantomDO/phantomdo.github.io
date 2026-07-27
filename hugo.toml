@@ -13,6 +13,11 @@ disableKinds = ["taxonomy", "term"]
   location = "France"
   profileImage = "images/profile.jpg"
 
+  # Where the "download my CV" button points. Swap this for a local path
+  # (e.g. "cv/donnovan-feuillastre-cv.pdf" served from static/) to host the
+  # PDF here instead of sending visitors to FlowCV.
+  cvUrl = "https://flowcv.com/resume/fiekw0carpdh"
+
   [params.social]
     github = "PhantomDO"
     gitlab = "PhantomDO"

@@ -34,7 +34,7 @@ project_count:
   one: "{{ . }} project"
   other: "{{ . }} projects"
 
-cv_download: "Print / Save as PDF"
+cv_download: "Download my CV"
 cv_reference: "Reference:"
 cv_references_note: "Further references available on request."
 cv_present: "Present"

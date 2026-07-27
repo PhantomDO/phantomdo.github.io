@@ -1068,6 +1068,26 @@ a.tag:hover {
     --border-strong: #999;
     --accent: #000;
     --accent-2: #000;
+
+    /* The screen scale is fluid and sized in vw, which means nothing on
+       paper: headings kept their full on-screen size. Restate the whole
+       scale in points so every element shrinks at once. */
+    --fs-xs: 7pt;
+    --fs-sm: 8pt;
+    --fs-base: 9.5pt;
+    --fs-lg: 10pt;
+    --fs-xl: 11.5pt;
+    --fs-2xl: 15pt;
+    --fs-3xl: 17pt;
+
+    --sp-1: 1pt;
+    --sp-2: 3pt;
+    --sp-3: 4pt;
+    --sp-4: 6pt;
+    --sp-5: 9pt;
+    --sp-6: 12pt;
+    --sp-7: 14pt;
+    --sp-8: 16pt;
   }
 
   @page {
@@ -1075,8 +1095,8 @@ a.tag:hover {
   }
 
   body {
-    font-size: 10.5pt;
-    line-height: 1.45;
+    font-size: var(--fs-base);
+    line-height: 1.4;
   }
 
   .site-header,
@@ -1092,34 +1112,52 @@ a.tag:hover {
     padding: 0;
   }
 
+  .project-header {
+    padding-block: 0 8pt;
+  }
+
   .section,
   .cv-section {
     padding-block: 0;
-    margin-block-start: 14pt;
-    break-inside: avoid;
-  }
-
-  .entry {
-    break-inside: avoid;
-    padding-block-end: 10pt;
-    gap: 10pt;
-  }
-
-  .entry + .entry {
-    padding-block-start: 10pt;
+    margin-block-start: 12pt;
   }
 
   .cv-section__title {
-    font-size: 13pt;
     break-after: avoid;
+    padding-block-end: 2pt;
+    margin-block-end: 6pt;
+  }
+
+  /* A dated column that wide wastes most of an A4 line. */
+  .entry {
+    grid-template-columns: 30mm minmax(0, 1fr);
+    break-inside: avoid;
+    padding-block-end: 7pt;
+    gap: 8pt;
+  }
+
+  .entry + .entry {
+    padding-block-start: 7pt;
+  }
+
+  /* Chips read as clutter on paper; flatten them to a separated list. */
+  .tags {
+    gap: 0 5pt;
+  }
+
+  .tag {
+    border: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .tag + .tag::before {
+    content: "· ";
+    color: #999;
   }
 
   a {
     color: #000;
     text-decoration: none;
-  }
-
-  .tag {
-    border-color: #999;
   }
 }
