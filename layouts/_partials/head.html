@@ -38,7 +38,8 @@
 {{/* The display face renders the hero title, so fetch it in parallel with the CSS. */}}
 <link rel="preload" href="{{ "fonts/montserrat-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-<link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
+{{/* No sizes="any" — that claims scalability an .ico does not have. */}}
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}">
 
 {{/* Language alternates */}}
 {{ range .AllTranslations }}

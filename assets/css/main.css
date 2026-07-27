@@ -153,11 +153,21 @@ body {
 }
 
 img,
-picture,
-svg {
+picture {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Inline icons carry no width/height attributes, so without this they
+   stretch to fill whatever flex container they land in. Sizing in em ties
+   them to the text they sit next to; the rules further down override it
+   where an icon needs a fixed size. */
+svg {
+  display: block;
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
 }
 
 a {
