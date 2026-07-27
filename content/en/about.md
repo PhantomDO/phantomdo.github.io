@@ -37,6 +37,5 @@ is broken and nobody knows why yet.
 ## Get in touch
 
 The fastest route is email: [{{< email >}}](mailto:{{< email >}}). My code lives on
-[GitHub](https://github.com/PhantomDO) and [GitLab](https://gitlab.com/PhantomDO), my personal
-games on [itch.io](https://phantomdo.itch.io/), and I'm on
-[LinkedIn](https://www.linkedin.com/in/donnovan-feuillastre).
+[GitHub](https://github.com/PhantomDO) and [GitLab](https://gitlab.com/PhantomDO), and my personal
+games on [itch.io](https://phantomdo.itch.io/).

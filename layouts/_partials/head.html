@@ -35,6 +35,9 @@
     {{- with $css.Data.Integrity }} integrity="{{ . }}"{{ end }}>
 {{ end }}
 
+{{/* The display face renders the hero title, so fetch it in parallel with the CSS. */}}
+<link rel="preload" href="{{ "fonts/montserrat-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+
 <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
 
 {{/* Language alternates */}}
@@ -74,7 +77,8 @@
     "address" (dict "@type" "PostalAddress" "addressCountry" site.Params.location)
     "sameAs" (slice
       (printf "https://github.com/%s" site.Params.social.github)
-      (printf "https://www.linkedin.com/in/%s" site.Params.social.linkedin))
+      (printf "https://gitlab.com/%s" site.Params.social.gitlab)
+      (printf "https://%s.itch.io/" site.Params.social.itch))
   | jsonify (dict "indent" "  ") | safeJS }}
 </script>
 {{ end }}

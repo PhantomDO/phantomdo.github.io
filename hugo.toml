@@ -17,7 +17,6 @@ disableKinds = ["taxonomy", "term"]
     github = "PhantomDO"
     gitlab = "PhantomDO"
     itch = "phantomdo"
-    linkedin = "donnovan-feuillastre"
 
 [languages]
   [languages.en]

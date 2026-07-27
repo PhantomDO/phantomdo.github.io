@@ -39,6 +39,5 @@ chose est cassé et que personne ne sait encore pourquoi.
 ## Me contacter
 
 Le plus rapide reste l'e-mail : [{{< email >}}](mailto:{{< email >}}). Mon code est sur
-[GitHub](https://github.com/PhantomDO) et [GitLab](https://gitlab.com/PhantomDO), mes jeux perso
-sur [itch.io](https://phantomdo.itch.io/), et je suis sur
-[LinkedIn](https://www.linkedin.com/in/donnovan-feuillastre).
+[GitHub](https://github.com/PhantomDO) et [GitLab](https://gitlab.com/PhantomDO), et mes jeux
+perso sur [itch.io](https://phantomdo.itch.io/).
