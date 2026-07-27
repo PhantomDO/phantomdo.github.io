@@ -5,11 +5,11 @@ featured: true
 lede: "New gameplay systems and optimisation on a fantasy creature-sanctuary management game."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Engine Programmer"
+role: "Game Engine Developer"
 year: "2022 – 2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]
-tech: ["C#", "Gameplay systems", "Optimisation", "Simulation"]
+tech: ["C#", "Shaders", "Gameplay systems", "Optimisation", "Simulation"]
 store: "https://store.steampowered.com/app/2556470/Fantastic_Haven/"
 ---
 
@@ -23,6 +23,8 @@ to the world.
 ## My contributions
 
 - Implemented **new gameplay systems** for the game.
+- Extended the Unity engine with **terrain deformation shaders** and **Epic Online Services**
+  integration.
 - Worked on **optimisation** across the project.
 
 ## Why it was interesting

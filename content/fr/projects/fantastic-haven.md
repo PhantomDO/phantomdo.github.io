@@ -5,11 +5,11 @@ featured: true
 lede: "Nouveaux systèmes de gameplay et optimisation sur un jeu de gestion de sanctuaires pour créatures fantastiques."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Programmeur moteur"
+role: "Développeur moteur de jeux"
 year: "2022 – 2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]
-tech: ["C#", "Systèmes de gameplay", "Optimisation", "Simulation"]
+tech: ["C#", "Shaders", "Systèmes de gameplay", "Optimisation", "Simulation"]
 store: "https://store.steampowered.com/app/2556470/Fantastic_Haven/"
 ---
 
@@ -23,6 +23,8 @@ magiques en danger, construire des sanctuaires pour les soigner, et gérer une r
 ## Mes contributions
 
 - Implémentation de **nouveaux systèmes de gameplay**.
+- Extension du moteur Unity avec des **shaders de déformation de terrain** et l'intégration
+  d'**Epic Online Services**.
 - Travaux d'**optimisation** sur l'ensemble du projet.
 
 ## Pourquoi c'était intéressant

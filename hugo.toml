@@ -26,6 +26,8 @@ disableKinds = ["taxonomy", "term"]
 
   [params.social]
     github = "PhantomDO"
+    gitlab = "PhantomDO"
+    itch = "phantomdo"
     linkedin = "donnovan-feuillastre"
 
 [languages]
@@ -36,8 +38,8 @@ disableKinds = ["taxonomy", "term"]
     weight = 1
     title = "Donnovan Feuillastre"
     [languages.en.params]
-      tagline = "Game Programmer"
-      description = "Game programmer specialised in gameplay systems, engine work and cross-platform shipping. Unity, Unreal Engine 5, C++ and C#."
+      tagline = "Software & Game Developer"
+      description = "Software and game developer specialised in high-performance, modular systems. Unreal Engine 5, Unity, C++ and C#."
     [[languages.en.menus.main]]
       name = "Projects"
       pageRef = "/projects"
@@ -58,8 +60,8 @@ disableKinds = ["taxonomy", "term"]
     weight = 2
     title = "Donnovan Feuillastre"
     [languages.fr.params]
-      tagline = "Programmeur de jeux vidéo"
-      description = "Programmeur de jeux vidéo spécialisé en systèmes de gameplay, travail moteur et portage multiplateforme. Unity, Unreal Engine 5, C++ et C#."
+      tagline = "Développeur logiciel & jeux vidéo"
+      description = "Développeur logiciel et jeux vidéo spécialisé dans les systèmes performants et modulaires. Unreal Engine 5, Unity, C++ et C#."
     [[languages.fr.menus.main]]
       name = "Projets"
       pageRef = "/projects"

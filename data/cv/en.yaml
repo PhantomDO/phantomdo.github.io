@@ -1,19 +1,24 @@
 # Single source of truth for the English CV.
 # Edit this file to update the /cv page and the home page highlights.
+# Mirrors the July 2026 FlowCV résumé.
+
+summary: >-
+  Software and game developer specialised in building high-performance, modular systems.
+  I'm looking for environments that combine creative ambition with technical rigour, and
+  structured ways of working.
 
 experience:
-  # TODO Donnovan: add here everything from January 2025 onwards (Spinware Games?).
-  # Copy the block structure below, newest first.
-  # - company: SPINWARE GAMES
-  #   url: https://spinwaregames.com
-  #   role: ""
-  #   period: "January 2025 - Present"
-  #   start: "2025-01"
-  #   end: ""
-  #   location: France
-  #   highlights:
-  #     - ""
-  #   tech: []
+  - company: SPINWARE
+    url: https://spinwaregames.com
+    role: Game Developer
+    period: "December 2025 - Present"
+    start: "2025-12"
+    end: ""
+    location: Puteaux, France
+    highlights:
+      - "Implemented game systems (**AI**, **UI**, **tools**) in Unreal Engine 5."
+      - "Improved user experience and the responsiveness of player interactions."
+    tech: [Unreal Engine 5, C++, Blueprint, Networking, Git]
 
   - company: WANADEV STUDIO
     url: https://www.wanadevstudio.com
@@ -27,99 +32,118 @@ experience:
       role: Lead Developer
       url: https://linkedin.com/in/bdjerigian/
     highlights:
-      - "Ported **Propagation: Paradise Hotel** to the Omni One platform, ensuring proper functionality."
-      - "Contributed to optimisation and architecture rework for **Vestiges: Fallen Tribes**."
-    tech: [C#, Unity, VR, Optimisation]
+      - "Adapted the gameplay mechanics of **Propagation: Paradise Hotel** for the **Omni One** VR treadmill, within the constraints of the hardware."
+      - "Optimised **Vestiges: Fallen Tribes** through component profiling, improving frame stability."
+      - "Worked with the design and QA teams to keep features consistent and code quality high."
+    tech: [Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profiling, Git]
 
   - company: PIECE OF CAKE STUDIOS
     url: https://www.pieceofcake-studios.com
-    role: Engine Programmer
+    role: Game Engine Developer
     period: "May 2022 - March 2024"
     start: "2022-05"
     end: "2024-03"
-    location: Lyon, France
+    location: Paris 19, France
     reference:
       name: Xavier Lemaitre
       role: CTO
       url: https://linkedin.com/in/xlemaitre
     highlights:
-      - "Contributed to **Fantastic Haven** by implementing new gameplay systems and optimising the game."
-      - "Ported **My Fantastic Ranch** and **Hacktag** to consoles and fixed issues reported by the QA team."
-      - "Assisted with tools and plugin development, and integrated SDK features for Switch, PS4, PS5 and Xbox."
-    tech: [C#, C++, Console SDKs, Tooling, Optimisation]
+      - "Extended the Unity engine with **Epic Online Services** integration and **terrain deformation** shaders."
+      - "Adapted **My Fantastic Ranch** and **Hacktag** for 8th and 9th generation consoles, with full platform compliance."
+      - "Built a **cross-platform achievement manager** with direct SDK integration, and oversaw console certification."
+      - "Improved internal tooling and automation, and optimised **GitLab CI** build pipelines."
+    tech: [Unity, C#, C++, Shaders, CI/CD, Cross-platform, Perforce]
 
   - company: ICONIK STUDIO
-    url: https://iconik.com
-    role: Gameplay Programmer
+    role: Game Developer
     period: "April 2020 - August 2021"
     start: "2020-04"
     end: "2021-08"
-    location: Saint-Étienne, France
+    location: La Ciotat, France
     reference:
       name: Curtis Pelissier
       role: Lead Developer
       url: https://linkedin.com/in/curtis-pelissier
     highlights:
-      - "Implemented new enemy AI behaviour and integrated new gameplay systems for **KING PONG**."
-      - "Developed tools for AI behaviour customisation using visual scripting (Behaviour Trees)."
-      - "Optimised game performance for Meta Quest 1 and 2."
-    tech: [C#, Unity, Behaviour Trees, VR, Optimisation]
+      - "Designed a **custom nodal editor** to streamline designer workflow and integrate the AI systems."
+      - "Developed the **\"Ultimate Attack\"** combat systems using finite state machines and a data-driven approach."
+      - "Optimised network replication through **Mirror** and **PlayFab** for standalone headset performance."
+    tech: [Unity, C#, AI systems, Networking, Optimisation, VR]
 
 education:
   - school: UNIVERSITÉ LYON II
     url: https://icom.univ-lyon2.fr/formation/master-2-informatique-gamagora-1
     degree: "Master in Computer Science / Video Game Engineering (GAMAGORA)"
-    period: "2021 - 2022"
+    period: "September 2021 - September 2022"
+    location: Bron, France
     description: >-
-      Handling every programming task required to develop a video game, both for the game
-      itself and for the software tools around it. Internship with Piece of Cake Studios (5 months).
+      Specialised in game development with a focus on real-time systems and software tools:
+      engine programming, real-time shading, image synthesis, physics simulation, game AI and
+      VR/AR. Project-based throughout, including a complete game built under studio conditions,
+      LabXP experimentation, a mandatory internship and a public showing at the Gamagora Game Show.
 
   - school: CNAM SAINT-ÉTIENNE
     url: https://cnam-auvergnerhonealpes.com/licence-generale-informatique-g02501
     degree: Bachelor in Computer Science
-    period: "2020 - 2021"
+    period: "September 2020 - September 2021"
+    location: Saint-Étienne, France
     description: >-
-      Handling the programming tasks required to develop software.
-      Work-study with Iconik Studio (1 year).
+      A broad computer science foundation: development, programming, networking, multimedia,
+      operating systems, architecture, software engineering, operations research, information
+      systems and industrial systems.
 
   - school: IUT LE PUY-EN-VELAY
     url: https://www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/iut-clermont-auvergne/but/but-informatique-le-puy
     degree: DUT in Computer Science
-    period: "2018 - 2020"
+    period: "September 2018 - September 2020"
+    location: Le Puy-en-Velay, France
     description: >-
-      Designing and developing 2D and 3D software through programming and image synthesis,
-      using C++, C#, OpenGL and Unity. Internship with Iconik Studio (3 months).
+      Strong programming foundation (C++, Python, Qt, OpenGL), algorithms, mathematics and
+      software engineering. Learning projects, internships of 10+ weeks and immersive labs
+      (VR, AR, motion capture), building interactive 3D applications with an emphasis on
+      real-time systems, cross-platform development, image processing and ethical digital practice.
 
   - school: BELLECOUR ÉCOLE
     url: https://www.bellecour.fr/formation/bachelor-game-development
     degree: Bachelor in Game Design
-    period: "2015 - 2018"
+    period: "September 2015 - September 2018"
+    location: Lyon, France
     description: >-
-      Writing Game and Level Design documents, and prototyping games and levels
-      with Unity 5 and Unreal Engine 4.
+      "Tech & Programming" track: Unity, Unreal, C#, C++ and Tech Art. Six major projects plus a
+      capstone, alongside game jams and workshops. The curriculum covered systems design, level
+      design, world-building, UX/UI, iteration, prototyping, narrative and collaboration.
 
 skills:
-  - name: Coding languages
-    items: [C#, "C/C++", Shaders, Bash, Markdown]
-  - name: Game engines
-    items: [Unity, Unreal Engine 5]
-  - name: Software & tools
-    items: [Perforce, Git, GitLab, Visual Studio, Rider, RenderDoc]
-  - name: Game programming
+  - name: Programming languages
+    items: ["C++", "C#", Java, JavaScript, Python, Bash, SQL]
+  - name: Engines & tools
+    items: [Unreal Engine, Unity, Visual Studio, Perforce, Git, GitLab, CI]
+  - name: Technical strengths
     items:
-      - Gameplay systems
-      - VR
-      - 3C
-      - GOAP
-      - Behaviour Trees
       - Debugging
-      - Cross-platform development
-      - Performance optimisation
+      - Optimisation
+      - Build automation
+      - Cross-platform integration
+      - Agile / Scrum
+  - name: Web & systems
+    items: ["Node.js REST APIs (beginner)", ".NET (learning)"]
   - name: Soft skills
-    items: [Problem solving, Synthesis, Teamwork, Reliable, Curious]
+    items:
+      - Analytical mindset
+      - Curious and adaptable
+      - Collaborative and methodical
+      - Meticulous attention to detail
+      - Solution-oriented
 
 languages:
   - name: French
     level: Native
   - name: English
-    level: Fluent (Linguaskill C1)
+    level: Advanced (Linguaskill C1)
+
+interests:
+  - Manga
+  - Video games
+  - Cinema
+  - "Game engines: real-time graphics, VR/XR, tooling, AI"

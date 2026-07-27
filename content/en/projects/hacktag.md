@@ -1,14 +1,14 @@
 ---
 title: "Hacktag"
 weight: 50
-lede: "Console port and QA bug-fixing on an asymmetric two-player co-op stealth game."
+lede: "Console adaptation and platform compliance on an asymmetric two-player co-op stealth game."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Engine Programmer"
+role: "Game Engine Developer"
 year: "2022 – 2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
-tech: ["C#", "Console SDKs", "Porting", "Co-op networking"]
+tech: ["C#", "C++", "Console SDKs", "Co-op networking", "CI/CD"]
 store: "https://store.steampowered.com/app/622770/Hacktag/"
 ---
 
@@ -21,9 +21,10 @@ the network side. The design goal is to make both players feel like the heroes o
 
 ## My contributions
 
-- **Ported the game to consoles.**
-- Fixed issues reported by the **QA team**.
-- Integrated SDK features for **Switch, PS4, PS5 and Xbox**.
+- **Adapted the game for 8th and 9th generation consoles**, with full platform compliance.
+- Integrated the **cross-platform achievement manager** and saw the title through
+  **console certification**.
+- Contributed to internal tooling and **GitLab CI** build pipeline improvements.
 
 ## Why it was interesting
 

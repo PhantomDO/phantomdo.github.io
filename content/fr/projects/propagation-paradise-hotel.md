@@ -2,14 +2,14 @@
 title: "Propagation: Paradise Hotel"
 weight: 10
 featured: true
-lede: "Un jeu d'horreur VR que j'ai porté sur la plateforme Omni One chez Wanadev Studio."
+lede: "Un jeu d'horreur VR dont j'ai adapté les mécaniques au tapis VR Omni One, chez Wanadev Studio."
 studio: "Wanadev Studio"
 studio_url: "https://www.wanadevstudio.com"
-role: "Développeur de jeux vidéo"
+role: "Développeur jeux vidéo"
 year: "2024"
-engine: "Unity"
+engine: "Unreal Engine 5"
 platforms: ["Omni One", "PC VR", "Meta Quest"]
-tech: ["C#", "VR", "Portage", "QA"]
+tech: ["C++", "Blueprint", "VR", "Profilage"]
 store: "https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/"
 ---
 
@@ -22,14 +22,16 @@ ressources et combat.
 
 ## Mes contributions
 
-- Portage du jeu sur la plateforme **Omni One**, en vérifiant que l'expérience complète
-  fonctionnait correctement sur le matériel cible.
-- Investigation et correction des problèmes spécifiques à la plateforme apparus pendant le portage.
+- **Adaptation des mécaniques de gameplay** pour le tapis VR **Omni One**, dans les contraintes
+  du matériel.
+- Collaboration avec les équipes design et QA pour garantir la cohérence des features et la
+  qualité du code.
 
 ## Pourquoi c'était intéressant
 
-L'Omni One est un casque associé à un tapis omnidirectionnel : les hypothèses de locomotion, de
-mapping des entrées et de confort valables sur un casque VR classique ne se transposent pas
-automatiquement. Un portage de ce type consiste moins à recompiler qu'à revalider chaque
-interaction face à un modèle d'entrée physique différent, tout en préservant le budget par frame
-sur du matériel autonome.
+L'Omni One est un tapis omnidirectionnel : le joueur marche réellement. Les hypothèses de
+locomotion, de mapping des entrées et de confort valables sur un casque VR classique ne se
+transposent tout simplement pas — la téléportation et le déplacement au stick n'ont plus de sens
+quand ce sont vos jambes qui font office de périphérique d'entrée. Le travail relevait moins de la
+recompilation que de la remise à plat de chaque interaction de déplacement face à un modèle
+physique différent, tout en préservant le budget par frame sur du matériel autonome.

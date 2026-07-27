@@ -8,6 +8,9 @@
       {{ site.Params.author }} — {{ site.Params.tagline }} · {{ site.Params.location }}
       · <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
     </p>
+    {{ with $cv.summary }}
+      <p class="project-header__lede" style="margin-block-start: var(--sp-4); color: var(--text)">{{ . }}</p>
+    {{ end }}
     {{ with .Content }}<div class="prose" style="margin-block-start: var(--sp-4)">{{ . }}</div>{{ end }}
 
     <div class="cv-actions no-print">
@@ -71,6 +74,7 @@
       <article class="entry">
         <div class="entry__aside">
           <span class="entry__period">{{ .period }}</span>
+          {{ with .location }}<span>{{ . }}</span>{{ end }}
         </div>
         <div>
           <h3 class="entry__title">
@@ -109,6 +113,15 @@
       {{ range . }}
         <li><strong>{{ .name }}</strong><span>{{ .level }}</span></li>
       {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  {{ with $cv.interests }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_interests" }}</h2>
+    <ul class="tags">
+      {{ range . }}<li class="tag">{{ . }}</li>{{ end }}
     </ul>
   </section>
   {{ end }}

@@ -1,14 +1,14 @@
 ---
 title: "Vestiges: Fallen Tribes"
 weight: 20
-lede: "Optimisation et refonte d'architecture sur un jeu de cartes tactique sci-fi jouable à plat et en VR."
+lede: "Profilage et optimisation des performances sur un jeu de cartes tactique sci-fi jouable à plat et en VR."
 studio: "Wanadev Studio"
 studio_url: "https://www.wanadevstudio.com"
-role: "Développeur de jeux vidéo"
+role: "Développeur jeux vidéo"
 year: "2024"
-engine: "Unity"
+engine: "Unreal Engine 5"
 platforms: ["PC", "VR (OpenXR / Meta)"]
-tech: ["C#", "Optimisation", "Architecture", "VR"]
+tech: ["C++", "Blueprint", "Profilage", "Optimisation", "VR"]
 store: "https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/"
 ---
 
@@ -21,12 +21,16 @@ aussi bien sur écran classique qu'en immersion VR complète, et est sorti en av
 
 ## Mes contributions
 
-- Participation aux travaux d'**optimisation** sur l'ensemble du jeu.
-- Participation à une **refonte de l'architecture** du code.
+- **Optimisation des performances par profilage des composants**, avec un gain de stabilité du
+  framerate.
+- Collaboration avec les équipes design et QA pour garantir la cohérence des features et la
+  qualité du code.
 
 ## Pourquoi c'était intéressant
 
-Faire coexister une version écran plat et une version VR dans la même base de code met
-l'architecture sous pression. La présentation doit être découplée de la logique de jeu assez
-proprement pour qu'un tour se déroule à l'identique qu'il soit rendu sur un moniteur ou autour de
-soi à l'échelle de la pièce — et c'est la cible VR qui fixe le plafond de performance des deux.
+Faire coexister une version écran plat et une version VR dans la même base de code met le travail
+de performance sous pression : c'est la cible VR qui fixe le plafond des deux. Profiler composant
+par composant, c'est justement ce qui permet de découvrir que le coût ne se trouve pas là où le
+frame graph le laisse d'abord penser. Et en VR, la *stabilité* du framerate compte davantage que
+la moyenne brute : une frame perdue, le joueur la ressent dans l'oreille interne plutôt qu'il ne
+la voit sur un compteur.

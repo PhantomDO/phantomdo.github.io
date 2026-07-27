@@ -1,14 +1,14 @@
 ---
 title: "My Fantastic Ranch"
 weight: 40
-lede: "Console port and QA bug-fixing on a fantasy ranch management game published by Nacon."
+lede: "Console adaptation, platform compliance and a cross-platform achievement manager on a fantasy ranch management game published by Nacon."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Engine Programmer"
+role: "Game Engine Developer"
 year: "2022 – 2024"
 engine: "Unity"
 platforms: ["Windows", "Nintendo Switch", "PS4", "PS5", "Xbox"]
-tech: ["C#", "Console SDKs", "Porting", "QA"]
+tech: ["C#", "C++", "Console SDKs", "CI/CD", "Perforce"]
 store: "https://store.steampowered.com/app/1949100/My_Fantastic_Ranch_Unicorns__Dragons/"
 ---
 
@@ -20,14 +20,18 @@ teaching riding and aerobatics lessons while managing resources and reputation.
 
 ## My contributions
 
-- **Ported the game to consoles.**
-- Fixed issues reported by the **QA team** during certification.
-- Integrated SDK features for **Switch, PS4, PS5 and Xbox**.
+- **Adapted the game for 8th and 9th generation consoles**, with full platform compliance.
+- Built a **cross-platform achievement manager** with direct SDK integration, and oversaw
+  **console certification**.
+- Improved internal tooling and automation, and optimised **GitLab CI** build pipelines.
 
 ## Why it was interesting
 
 Console porting is where a game meets rules it cannot argue with. Each platform holder has
 certification requirements — suspend and resume, controller disconnection, save data integrity,
-user account switching — and every one of them is a code path that never runs on PC. Getting a
-title through certification is mostly a long, precise checklist executed under a memory budget
-you don't control.
+user account switching — and every one of them is a code path that never runs on PC.
+
+Achievements are a good example of why an abstraction earns its keep: every platform exposes the
+same concept through a completely different SDK, with different unlock semantics and different
+failure modes. Writing that once, behind one interface, is the difference between shipping on four
+platforms and maintaining four games.

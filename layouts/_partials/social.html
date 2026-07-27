@@ -4,6 +4,16 @@
       {{ partial "icon.html" "github" }}
     </a>
   {{ end }}
+  {{ with site.Params.social.gitlab }}
+    <a href="https://gitlab.com/{{ . }}" rel="me noopener" target="_blank" aria-label="GitLab" title="GitLab">
+      {{ partial "icon.html" "gitlab" }}
+    </a>
+  {{ end }}
+  {{ with site.Params.social.itch }}
+    <a href="https://{{ . }}.itch.io/" rel="me noopener" target="_blank" aria-label="itch.io" title="itch.io">
+      {{ partial "icon.html" "itch" }}
+    </a>
+  {{ end }}
   {{ with site.Params.social.linkedin }}
     <a href="https://www.linkedin.com/in/{{ . }}" rel="me noopener" target="_blank" aria-label="LinkedIn" title="LinkedIn">
       {{ partial "icon.html" "linkedin" }}

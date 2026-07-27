@@ -1,14 +1,14 @@
 ---
 title: "Hacktag"
 weight: 50
-lede: "Portage console et correction de bugs QA sur un jeu d'infiltration coopératif asymétrique à deux."
+lede: "Adaptation console et conformité plateforme sur un jeu d'infiltration coopératif asymétrique à deux."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Programmeur moteur"
+role: "Développeur moteur de jeux"
 year: "2022 – 2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
-tech: ["C#", "SDK consoles", "Portage", "Réseau coop"]
+tech: ["C#", "C++", "SDK consoles", "Réseau coop", "CI/CD"]
 store: "https://store.steampowered.com/app/622770/Hacktag/"
 ---
 
@@ -22,9 +22,11 @@ casse.
 
 ## Mes contributions
 
-- **Portage du jeu sur consoles.**
-- Correction des bugs remontés par l'**équipe QA**.
-- Intégration des fonctionnalités SDK pour **Switch, PS4, PS5 et Xbox**.
+- **Adaptation du jeu pour les consoles de 8ᵉ et 9ᵉ génération**, en conformité complète avec les
+  exigences des plateformes.
+- Intégration du **gestionnaire de succès cross-platform** et suivi du titre jusqu'à la
+  **certification console**.
+- Contribution aux outils internes et à l'amélioration des pipelines de build **GitLab CI**.
 
 ## Pourquoi c'était intéressant
 

@@ -1,14 +1,14 @@
 ---
 title: "Vestiges: Fallen Tribes"
 weight: 20
-lede: "Optimisation and architecture rework on a sci-fi tactical card game playable flat and in VR."
+lede: "Performance profiling and optimisation on a sci-fi tactical card game playable flat and in VR."
 studio: "Wanadev Studio"
 studio_url: "https://www.wanadevstudio.com"
 role: "Game Developer"
 year: "2024"
-engine: "Unity"
+engine: "Unreal Engine 5"
 platforms: ["PC", "VR (OpenXR / Meta)"]
-tech: ["C#", "Optimisation", "Architecture", "VR"]
+tech: ["C++", "Blueprint", "Profiling", "Optimisation", "VR"]
 store: "https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/"
 ---
 
@@ -21,12 +21,13 @@ and full VR immersion, and released in April 2025.
 
 ## My contributions
 
-- Contributed to **optimisation** work across the game.
-- Contributed to an **architecture rework** of the codebase.
+- **Optimised performance through component profiling**, improving frame stability.
+- Worked with the design and QA teams to keep features consistent and code quality high.
 
 ## Why it was interesting
 
 Supporting a flat-screen build and a VR build from the same codebase puts real pressure on
-architecture. Presentation has to be decoupled from game logic cleanly enough that a turn plays
-identically whether it's rendered on a monitor or around you at room scale — and the VR target
-sets the performance ceiling for both.
+performance work: the VR target sets the ceiling for both. Profiling component by component is
+how you find out that the cost is not where the frame graph first suggests — and in VR, frame
+*stability* matters more than raw average framerate, because a dropped frame is something the
+player feels in their inner ear rather than sees on a counter.
