@@ -3,20 +3,9 @@ title = "Donnovan Feuillastre"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
-enableEmoji = true
 
 # A portfolio of a handful of projects does not need faceted browsing.
 disableKinds = ["taxonomy", "term"]
-
-[pagination]
-  pagerSize = 12
-
-[markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 3
 
 [params]
   author = "Donnovan Feuillastre"
@@ -75,5 +64,3 @@ disableKinds = ["taxonomy", "term"]
       pageRef = "/about"
       weight = 30
 
-[outputs]
-  home = ["HTML", "RSS"]

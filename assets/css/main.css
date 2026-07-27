@@ -40,60 +40,34 @@
   --transition: 160ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark is the default look; light theme overrides below. */
-:root,
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #0a0d12;
-  --bg-elev: #12171f;
-  --bg-elev-2: #1a212c;
-  --border: #232c3a;
-  --border-strong: #334054;
-  --text: #e8ecf3;
-  --text-muted: #97a3b6;
-  --text-faint: #6b7789;
-  --accent: #57cbff;
-  --accent-strong: #8be0ff;
-  --accent-contrast: #05202e;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -12px rgb(0 0 0 / 0.6);
-  --glow: radial-gradient(60% 60% at 50% 0%, rgb(87 203 255 / 0.14), transparent 70%);
+/* One declaration per token: light-dark() resolves against color-scheme,
+   so the palette lives in exactly one place. The toggle only flips
+   color-scheme; it never restates a colour. */
+:root {
+  color-scheme: light dark;
+
+  --bg: light-dark(#fbfcfd, #0a0d12);
+  --bg-elev: light-dark(#ffffff, #12171f);
+  --bg-elev-2: light-dark(#f2f5f9, #1a212c);
+  --border: light-dark(#e3e8ef, #232c3a);
+  --border-strong: light-dark(#cbd4e1, #334054);
+  --text: light-dark(#0f1620, #e8ecf3);
+  --text-muted: light-dark(#55627a, #97a3b6);
+  --text-faint: light-dark(#7c8898, #6b7789);
+  --accent: light-dark(#0a7ea4, #57cbff);
+  --accent-strong: light-dark(#075c78, #8be0ff);
+  --accent-contrast: light-dark(#ffffff, #05202e);
+  --shadow: 0 1px 2px light-dark(rgb(15 22 32 / 0.06), rgb(0 0 0 / 0.4)),
+    0 8px 24px -12px light-dark(rgb(15 22 32 / 0.18), rgb(0 0 0 / 0.6));
+  --glow: radial-gradient(
+    60% 60% at 50% 0%,
+    light-dark(rgb(10 126 164 / 0.08), rgb(87 203 255 / 0.14)),
+    transparent 70%
+  );
 }
 
-:root[data-theme="light"] {
-  color-scheme: light;
-  --bg: #fbfcfd;
-  --bg-elev: #ffffff;
-  --bg-elev-2: #f2f5f9;
-  --border: #e3e8ef;
-  --border-strong: #cbd4e1;
-  --text: #0f1620;
-  --text-muted: #55627a;
-  --text-faint: #7c8898;
-  --accent: #0a7ea4;
-  --accent-strong: #075c78;
-  --accent-contrast: #ffffff;
-  --shadow: 0 1px 2px rgb(15 22 32 / 0.06), 0 8px 24px -12px rgb(15 22 32 / 0.18);
-  --glow: radial-gradient(60% 60% at 50% 0%, rgb(10 126 164 / 0.08), transparent 70%);
-}
-
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme]) {
-    color-scheme: light;
-    --bg: #fbfcfd;
-    --bg-elev: #ffffff;
-    --bg-elev-2: #f2f5f9;
-    --border: #e3e8ef;
-    --border-strong: #cbd4e1;
-    --text: #0f1620;
-    --text-muted: #55627a;
-    --text-faint: #7c8898;
-    --accent: #0a7ea4;
-    --accent-strong: #075c78;
-    --accent-contrast: #ffffff;
-    --shadow: 0 1px 2px rgb(15 22 32 / 0.06), 0 8px 24px -12px rgb(15 22 32 / 0.18);
-    --glow: radial-gradient(60% 60% at 50% 0%, rgb(10 126 164 / 0.08), transparent 70%);
-  }
-}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 /* ---------- Reset & base ---------- */
 

@@ -21,8 +21,7 @@
       {{ partial "lang-switcher.html" . }}
       <button class="icon-btn theme-toggle" type="button"
               aria-label="{{ i18n "toggle_theme" }}" title="{{ i18n "toggle_theme" }}">
-        <span class="theme-toggle__sun">{{ partial "icon.html" "sun" }}</span>
-        <span class="theme-toggle__moon" hidden>{{ partial "icon.html" "moon" }}</span>
+        {{ partial "icon.html" "contrast" }}
       </button>
     </div>
   </div>

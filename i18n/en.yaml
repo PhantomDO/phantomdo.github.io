@@ -40,8 +40,6 @@ cv_references_note: "Further references available on request."
 cv_present: "Present"
 
 email_me: "Email me"
-copy_email: "Copy email address"
-email_copied: "Copied"
 
 reading_lang_notice: "This page is not available in English yet — showing the French version."
 built_with: "Built with Hugo. Source on GitHub."

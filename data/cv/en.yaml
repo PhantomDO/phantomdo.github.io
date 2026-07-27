@@ -12,8 +12,6 @@ experience:
     url: https://spinwaregames.com
     role: Game Developer
     period: "December 2025 - Present"
-    start: "2025-12"
-    end: ""
     location: Puteaux, France
     highlights:
       - "Implemented game systems (**AI**, **UI**, **tools**) in Unreal Engine 5."
@@ -24,8 +22,6 @@ experience:
     url: https://www.wanadevstudio.com
     role: Game Developer
     period: "September 2024 - December 2024"
-    start: "2024-09"
-    end: "2024-12"
     location: Lyon, France
     reference:
       name: Benoit Djerigian
@@ -41,8 +37,6 @@ experience:
     url: https://www.pieceofcake-studios.com
     role: Game Engine Developer
     period: "May 2022 - March 2024"
-    start: "2022-05"
-    end: "2024-03"
     location: Paris 19, France
     reference:
       name: Xavier Lemaitre
@@ -58,8 +52,6 @@ experience:
   - company: ICONIK STUDIO
     role: Game Developer
     period: "April 2020 - August 2021"
-    start: "2020-04"
-    end: "2021-08"
     location: La Ciotat, France
     reference:
       name: Curtis Pelissier
