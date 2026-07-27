@@ -5,7 +5,7 @@ lede: "Adaptation console, conformité plateforme et gestionnaire de succès cro
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Développeur moteur de jeux"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "SDK consoles", "CI/CD", "Perforce"]
@@ -31,8 +31,8 @@ cours d'équitation et de voltige, tout en gérant ressources et réputation.
 ## Pourquoi c'était intéressant
 
 Le portage console, c'est le moment où un jeu rencontre des règles qui ne se négocient pas. Chaque
-constructeur impose ses exigences de certification — mise en veille et reprise, déconnexion de
-manette, intégrité des sauvegardes, changement de compte utilisateur — et chacune est un chemin de
+constructeur impose ses exigences de certification : mise en veille et reprise, déconnexion de
+manette, intégrité des sauvegardes, changement de compte utilisateur. Chacune est un chemin de
 code qui ne s'exécute jamais sur PC.
 
 Les succès illustrent bien pourquoi une abstraction est rentable : chaque plateforme expose le

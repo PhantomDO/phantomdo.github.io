@@ -1,5 +1,5 @@
 /* =========================================================================
-   Donnovan Feuillastre — portfolio & CV
+   Donnovan Feuillastre, portfolio & CV
    Hand-rolled design system. No framework, no build step beyond Hugo Pipes.
    ========================================================================= */
 
@@ -87,7 +87,7 @@
   --text-faint: light-dark(#867891, #7d7089);
 
   /* Orange leads, purple supports. Light-theme values are darkened to keep
-     text contrast above 4.5:1 on white — bright orange fails it outright. */
+     text contrast above 4.5:1 on white, because bright orange fails it outright. */
   --accent: light-dark(#c2410c, #ff9152);
   --accent-strong: light-dark(#9a3412, #ffb184);
   --accent-2: light-dark(#7c3aed, #c08cff);
@@ -776,7 +776,7 @@ a.tag:hover {
   border: 1px solid var(--border);
   margin-block-end: var(--sp-6);
   width: 100%;
-  max-width: 616px; /* the source capsule's native width — never upscale */
+  max-width: 616px; /* the source capsule's native width, never upscale */
 }
 
 /* ---------- Prose ---------- */

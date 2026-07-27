@@ -5,7 +5,7 @@ lede: "Adaptation console et conformité plateforme sur un jeu d'infiltration co
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Développeur moteur de jeux"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "SDK consoles", "Réseau coop", "CI/CD"]
@@ -32,6 +32,6 @@ casse.
 ## Pourquoi c'était intéressant
 
 Un jeu coopératif asymétrique augmente la difficulté d'un portage console. Deux joueurs sur deux
-écrans différents — potentiellement sur deux plateformes différentes — doivent rester parfaitement
-synchronisés : le réseau, la gestion de session et les services en ligne de chaque plateforme
+écrans différents, potentiellement sur deux plateformes différentes, doivent rester parfaitement
+synchronisés. Le réseau, la gestion de session et les services en ligne de chaque plateforme
 doivent donc être revalidés cible par cible, jamais supposés fonctionnels.

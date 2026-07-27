@@ -6,7 +6,7 @@ lede: "New gameplay systems and optimisation on a fantasy creature-sanctuary man
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Game Engine Developer"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]
 tech: ["C#", "Shaders", "Gameplay systems", "Optimisation", "Simulation"]
@@ -21,7 +21,7 @@ Publishing. You play as the Elders of a fantasy continent, rescuing endangered m
 building sanctuaries to rehabilitate them, and managing a resource called ether to restore magic
 to the world.
 
-The game has not shipped yet — Steam currently lists it for Q4 2026. My work on it was done
+The game has not shipped yet. Steam currently lists it for Q4 2026, and my work on it was done
 during my time at the studio, between 2022 and 2024.
 
 ## My contributions

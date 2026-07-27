@@ -5,7 +5,7 @@
   <header class="project-header">
     <h1 class="project-header__title">{{ .Title }}</h1>
     <p class="project-header__lede">
-      {{ site.Params.author }} — {{ site.Params.tagline }} · {{ site.Params.location }}
+      {{ site.Params.author }}, {{ site.Params.tagline }} · {{ site.Params.location }}
       · <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
     </p>
     {{ with $cv.summary }}
@@ -51,13 +51,11 @@
           {{ with .reference }}
             <p class="entry__ref">
               {{ partial "icon.html" "user" }}
+              {{/* Kept on one line: a newline before the comma renders as a
+                   space, and can wrap the comma onto the next line. */}}
               <span>
-                {{ i18n "cv_reference" }} —
-                {{ if .url }}
-                  <a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>
-                {{ else }}
-                  {{ .name }}
-                {{ end }}, {{ .role }}
+                {{ i18n "cv_reference" }}
+                {{ if .url }}<a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}, {{ .role }}
               </span>
             </p>
           {{ end }}

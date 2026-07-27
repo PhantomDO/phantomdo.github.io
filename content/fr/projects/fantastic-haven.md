@@ -6,7 +6,7 @@ lede: "Nouveaux systèmes de gameplay et optimisation sur un jeu de gestion de s
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Développeur moteur de jeux"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]
 tech: ["C#", "Shaders", "Systèmes de gameplay", "Optimisation", "Simulation"]
@@ -21,7 +21,7 @@ Publishing. On y incarne les Anciens d'un continent fantastique : il faut secour
 magiques en danger, construire des sanctuaires pour les soigner, et gérer une ressource appelée
 éther afin de rendre sa magie au monde.
 
-Le jeu n'est pas encore sorti — Steam l'annonce pour le T4 2026. Mon travail dessus a été réalisé
+Le jeu n'est pas encore sorti. Steam l'annonce pour le T4 2026, et mon travail dessus a été réalisé
 pendant mon passage au studio, entre 2022 et 2024.
 
 ## Mes contributions

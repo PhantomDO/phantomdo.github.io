@@ -5,7 +5,7 @@ featured: true
 lede: "A custom nodal editor, data-driven combat systems and network optimisation on a VR table-tennis game."
 studio: "Iconik Studio"
 role: "Game Developer"
-year: "2020 – 2021"
+year: "2020-2021"
 engine: "Unity"
 platforms: ["PC VR", "Meta Quest 1", "Meta Quest 2"]
 tech: ["C#", "AI systems", "Networking", "Mirror", "PlayFab", "VR"]
@@ -31,11 +31,11 @@ arena.
 
 ## Why it was interesting
 
-A table-tennis AI has to be beatable in a way that feels fair, which is a design problem before
-it is a programming one — hence building an editor designers could drive themselves rather than
+A table-tennis AI has to be beatable in a way that feels fair, which is a design problem before it
+is a programming one. Hence building an editor designers could drive themselves, rather than
 hard-coding difficulty. The data-driven approach to the Ultimates paid off for the same reason:
 new attacks become data, not a code change and a rebuild.
 
 The networking side had the tighter constraint. The Quest is a mobile chip rendering two eyes at
-72 Hz, and replication competes directly with that frame budget — in a game where the entire
+72 Hz, and replication competes directly with that frame budget, in a game where the entire
 experience is a fast-moving ball whose position both players must agree on, instantly.

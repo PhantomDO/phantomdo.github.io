@@ -1,9 +1,9 @@
 {{- $title := .Title -}}
 {{- $siteTitle := site.Title -}}
 {{- if .IsHome -}}
-  {{- $title = printf "%s — %s" $siteTitle site.Params.tagline -}}
+  {{- $title = printf "%s · %s" $siteTitle site.Params.tagline -}}
 {{- else -}}
-  {{- $title = printf "%s — %s" .Title $siteTitle -}}
+  {{- $title = printf "%s · %s" .Title $siteTitle -}}
 {{- end -}}
 {{- $description := .Description | default .Params.lede | default site.Params.description -}}
 
@@ -38,7 +38,7 @@
 {{/* The display face renders the hero title, so fetch it in parallel with the CSS. */}}
 <link rel="preload" href="{{ "fonts/montserrat-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-{{/* No sizes="any" — that claims scalability an .ico does not have. */}}
+{{/* No sizes="any", which would claim a scalability an .ico does not have. */}}
 <link rel="icon" href="{{ "images/favicon.ico" | relURL }}">
 
 {{/* Language alternates */}}

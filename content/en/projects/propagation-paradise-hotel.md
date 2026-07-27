@@ -30,7 +30,7 @@ management and combat.
 ## Why it was interesting
 
 Omni One is an omnidirectional treadmill: the player physically walks. Locomotion, input mapping
-and comfort assumptions that hold on a standard VR headset simply do not carry over — teleport
-and stick-based movement stop making sense when your legs are the input device. The work was less
-a recompile than a re-think of every movement interaction against a different physical model,
-while keeping the frame budget intact on standalone hardware.
+and comfort assumptions that hold on a standard VR headset simply do not carry over. Teleport and
+stick-based movement stop making sense when your legs are the input device. The work was less a
+recompile than a re-think of every movement interaction against a different physical model, while
+keeping the frame budget intact on standalone hardware.

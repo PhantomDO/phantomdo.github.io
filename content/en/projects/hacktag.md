@@ -5,7 +5,7 @@ lede: "Console adaptation and platform compliance on an asymmetric two-player co
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Game Engine Developer"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "Console SDKs", "Co-op networking", "CI/CD"]
@@ -29,7 +29,7 @@ the network side. The design goal is to make both players feel like the heroes o
 
 ## Why it was interesting
 
-An asymmetric co-op game raises the stakes of a console port. Two players on two different
-screens — potentially on two different platforms — have to stay in lockstep, so networking,
-session management and platform online services all have to be re-validated per target rather
-than assumed to work.
+An asymmetric co-op game raises the stakes of a console port. Two players on two different screens,
+potentially on two different platforms, have to stay in lockstep. Networking, session management
+and platform online services therefore all have to be re-validated per target rather than assumed
+to work.

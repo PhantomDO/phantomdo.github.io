@@ -21,7 +21,7 @@
     </div>
 
     {{ with resources.Get site.Params.profileImage }}
-      {{/* profile.jpg is 400x400 — asking for more would only upscale it. */}}
+      {{/* profile.jpg is 400x400, so asking for more would only upscale it. */}}
       {{ $img := .Fill "400x400 Center q85 webp" }}
       <img class="hero__portrait" src="{{ $img.RelPermalink }}"
            width="{{ $img.Width }}" height="{{ $img.Height }}"

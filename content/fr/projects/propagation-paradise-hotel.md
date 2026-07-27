@@ -32,7 +32,7 @@ ressources et combat.
 
 L'Omni One est un tapis omnidirectionnel : le joueur marche réellement. Les hypothèses de
 locomotion, de mapping des entrées et de confort valables sur un casque VR classique ne se
-transposent tout simplement pas — la téléportation et le déplacement au stick n'ont plus de sens
+transposent tout simplement pas. La téléportation et le déplacement au stick n'ont plus de sens
 quand ce sont vos jambes qui font office de périphérique d'entrée. Le travail relevait moins de la
 recompilation que de la remise à plat de chaque interaction de déplacement face à un modèle
 physique différent, tout en préservant le budget par frame sur du matériel autonome.

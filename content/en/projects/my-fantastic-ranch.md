@@ -5,7 +5,7 @@ lede: "Console adaptation, platform compliance and a cross-platform achievement 
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Game Engine Developer"
-year: "2022 – 2024"
+year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "Nintendo Switch", "PS4", "PS5", "Xbox"]
 tech: ["C#", "C++", "Console SDKs", "CI/CD", "Perforce"]
@@ -28,9 +28,9 @@ teaching riding and aerobatics lessons while managing resources and reputation.
 
 ## Why it was interesting
 
-Console porting is where a game meets rules it cannot argue with. Each platform holder has
-certification requirements — suspend and resume, controller disconnection, save data integrity,
-user account switching — and every one of them is a code path that never runs on PC.
+Console porting is where a game meets rules it cannot argue with. Each platform holder has its own
+certification requirements: suspend and resume, controller disconnection, save data integrity,
+user account switching. Every one of them is a code path that never runs on PC.
 
 Achievements are a good example of why an abstraction earns its keep: every platform exposes the
 same concept through a completely different SDK, with different unlock semantics and different

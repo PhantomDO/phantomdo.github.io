@@ -35,11 +35,10 @@ project_count:
   other: "{{ . }} projects"
 
 cv_download: "Print / Save as PDF"
-cv_reference: "Reference"
+cv_reference: "Reference:"
 cv_references_note: "Further references available on request."
 cv_present: "Present"
 
 email_me: "Email me"
 
-reading_lang_notice: "This page is not available in English yet — showing the French version."
 built_with: "Built with Hugo. Source on GitHub."

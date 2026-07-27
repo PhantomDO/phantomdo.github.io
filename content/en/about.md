@@ -7,15 +7,15 @@ description: "About Donnovan Feuillastre, software and game developer specialise
 ## How I work
 
 I started out in Game Design at Bellecour École, on the "Tech & Programming" track, before moving
-fully into programming — a DUT, a Bachelor's degree, then a Master's in Video Game Engineering at
-GAMAGORA. That path is the reason I tend to think about a feature from both sides: what it should
-feel like to play, and what it costs to run.
+fully into programming: a DUT, a Bachelor's degree, then a Master's in Video Game Engineering at
+GAMAGORA. That path is the reason I tend to think about a feature from both sides, both what it
+should feel like to play and what it costs to run.
 
-Most of my professional work sits between gameplay and engine. Writing systems that designers can
-actually use — a nodal editor rather than a hard-coded difficulty curve, data-driven attacks
-rather than a rebuild per tweak — then making sure those systems hold up on a Quest headset or a
-Switch. Console SDK integration, profiling, build automation: the unglamorous work that decides
-whether a game ships.
+Most of my professional work sits between gameplay and engine. It means writing systems that
+designers can actually use, like a nodal editor rather than a hard-coded difficulty curve, or
+data-driven attacks rather than a rebuild for every tweak. Then it means making sure those systems
+hold up on a Quest headset or a Switch. Console SDK integration, profiling, build automation: the
+unglamorous work that decides whether a game ships.
 
 ## What I'm good at
 
@@ -30,9 +30,9 @@ whether a game ships.
 
 ## Outside of work
 
-Manga, cinema, and games — plus a standing interest in the engines themselves: real-time
-graphics, VR/XR, tooling and AI. I like being the person on a team others come to when something
-is broken and nobody knows why yet.
+Manga, cinema, and games, plus a standing interest in the engines themselves: real-time graphics,
+VR/XR, tooling and AI. I like being the person on a team others come to when something is broken
+and nobody knows why yet.
 
 ## Get in touch
 

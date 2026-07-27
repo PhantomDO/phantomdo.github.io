@@ -5,7 +5,7 @@ featured: true
 lede: "Éditeur nodal sur mesure, systèmes de combat data-driven et optimisation réseau sur un jeu de tennis de table en VR."
 studio: "Iconik Studio"
 role: "Développeur jeux vidéo"
-year: "2020 – 2021"
+year: "2020-2021"
 engine: "Unity"
 platforms: ["PC VR", "Meta Quest 1", "Meta Quest 2"]
 tech: ["C#", "Systèmes d'IA", "Networking", "Mirror", "PlayFab", "VR"]
@@ -33,12 +33,12 @@ multijoueur compétitif en ligne dans une arène au style Tron.
 ## Pourquoi c'était intéressant
 
 Une IA de tennis de table doit être battable d'une manière qui paraisse juste : c'est un problème
-de design avant d'être un problème de programmation — d'où l'idée de construire un éditeur que les
-game designers pilotent eux-mêmes plutôt que de coder la difficulté en dur. L'approche data-driven
+de design avant d'être un problème de programmation. D'où l'idée de construire un éditeur que les
+game designers pilotent eux-mêmes, plutôt que de coder la difficulté en dur. L'approche data-driven
 des Ultimates répond à la même logique : une nouvelle attaque devient une donnée, pas une
 modification de code suivie d'un rebuild.
 
 C'est côté réseau que la contrainte était la plus forte. Le Quest est une puce mobile qui rend
-deux yeux à 72 Hz, et la réplication entre en concurrence directe avec ce budget par frame — dans
+deux yeux à 72 Hz, et la réplication entre en concurrence directe avec ce budget par frame, dans
 un jeu où toute l'expérience tient à une balle rapide dont les deux joueurs doivent s'accorder sur
 la position, instantanément.
