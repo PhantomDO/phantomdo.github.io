@@ -1,0 +1,17 @@
+<div class="social">
+  {{ with site.Params.social.github }}
+    <a href="https://github.com/{{ . }}" rel="me noopener" target="_blank" aria-label="GitHub" title="GitHub">
+      {{ partial "icon.html" "github" }}
+    </a>
+  {{ end }}
+  {{ with site.Params.social.linkedin }}
+    <a href="https://www.linkedin.com/in/{{ . }}" rel="me noopener" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+      {{ partial "icon.html" "linkedin" }}
+    </a>
+  {{ end }}
+  {{ with site.Params.email }}
+    <a href="mailto:{{ . }}" aria-label="{{ i18n "email_me" }}" title="{{ . }}">
+      {{ partial "icon.html" "mail" }}
+    </a>
+  {{ end }}
+</div>

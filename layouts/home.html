@@ -1,0 +1,118 @@
+{{ define "main" }}
+{{ $cv := index hugo.Data.cv site.Language.Lang }}
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div>
+      <p class="hero__eyebrow">{{ i18n "hero_greeting" }}</p>
+      <h1 class="hero__title">{{ site.Params.author }}</h1>
+      <p class="hero__tagline">{{ site.Params.tagline }} · {{ site.Params.location }}</p>
+      <div class="hero__bio">{{ .Content }}</div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ (site.GetPage "/projects").RelPermalink }}">
+          {{ i18n "hero_cta_projects" }} {{ partial "icon.html" "arrow-right" }}
+        </a>
+        <a class="btn btn--ghost" href="{{ (site.GetPage "/cv").RelPermalink }}">
+          {{ i18n "hero_cta_cv" }}
+        </a>
+        {{ partial "social.html" . }}
+      </div>
+    </div>
+
+    {{ with resources.Get site.Params.profileImage }}
+      {{ $img := .Fill "420x420 Center q85 webp" }}
+      <img class="hero__portrait" src="{{ $img.RelPermalink }}"
+           width="{{ $img.Width }}" height="{{ $img.Height }}"
+           alt="{{ site.Params.author }}" fetchpriority="high">
+    {{ end }}
+  </div>
+</section>
+
+{{ $projects := where site.RegularPages "Section" "projects" }}
+{{ $featured := where $projects "Params.featured" true }}
+{{ with $featured }}
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">{{ i18n "section_selected_work" }}</h2>
+      <p class="section__sub">{{ i18n "section_selected_work_sub" }}</p>
+    </div>
+
+    <div class="project-grid">
+      {{ range first 3 (sort . "Weight") }}
+        {{ partial "project-card.html" . }}
+      {{ end }}
+    </div>
+
+    <p style="margin-block-start: var(--sp-5)">
+      <a class="btn btn--ghost" href="{{ (site.GetPage "/projects").RelPermalink }}">
+        {{ i18n "all_projects" }} {{ partial "icon.html" "arrow-right" }}
+      </a>
+    </p>
+  </div>
+</section>
+{{ end }}
+
+{{ with $cv.experience }}
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">{{ i18n "section_experience" }}</h2>
+    </div>
+
+    {{ range first 3 . }}
+      <div class="entry">
+        <div class="entry__aside">
+          <span class="entry__period">{{ .period }}</span>
+          {{ with .location }}<span>{{ . }}</span>{{ end }}
+        </div>
+        <div>
+          <h3 class="entry__title">
+            {{ with .url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ end }}
+            {{- .company -}}
+            {{ if .url }}</a>{{ end }}
+          </h3>
+          <p class="entry__role">{{ .role }}</p>
+          <ul class="entry__list">
+            {{ range .highlights }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+        </div>
+      </div>
+    {{ end }}
+
+    <p>
+      <a class="btn btn--ghost" href="{{ (site.GetPage "/cv").RelPermalink }}">
+        {{ i18n "hero_cta_cv" }} {{ partial "icon.html" "arrow-right" }}
+      </a>
+    </p>
+  </div>
+</section>
+{{ end }}
+
+{{ with $cv.skills }}
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">{{ i18n "section_skills" }}</h2>
+    </div>
+    <div class="skill-grid">
+      {{ range . }}
+        <div class="skill-group">
+          <h3 class="skill-group__name">{{ .name }}</h3>
+          <ul class="tags">
+            {{ range .items }}<li class="tag">{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="container">
+    {{ partial "contact-card.html" . }}
+  </div>
+</section>
+{{ end }}

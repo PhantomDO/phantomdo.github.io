@@ -1,0 +1,126 @@
+# Source unique de vérité pour le CV français.
+# Modifier ce fichier met à jour la page /fr/cv/ et les points forts de l'accueil.
+
+experience:
+  # TODO Donnovan : ajouter ici tout ce qui suit janvier 2025 (Spinware Games ?).
+  # Copier la structure ci-dessous, du plus récent au plus ancien.
+  # - company: SPINWARE GAMES
+  #   url: https://spinwaregames.com
+  #   role: ""
+  #   period: "Janvier 2025 - Aujourd'hui"
+  #   start: "2025-01"
+  #   end: ""
+  #   location: France
+  #   highlights:
+  #     - ""
+  #   tech: []
+
+  - company: WANADEV STUDIO
+    url: https://www.wanadevstudio.com
+    role: Développeur de jeux vidéo
+    period: "Septembre 2024 - Décembre 2024"
+    start: "2024-09"
+    end: "2024-12"
+    location: Lyon, France
+    reference:
+      name: Benoit Djerigian
+      role: Lead Developer
+      url: https://linkedin.com/in/bdjerigian/
+    highlights:
+      - "Portage de **Propagation: Paradise Hotel** sur la plateforme Omni One, en garantissant son bon fonctionnement."
+      - "Participation à l'optimisation et à la refonte de l'architecture de **Vestiges: Fallen Tribes**."
+    tech: [C#, Unity, VR, Optimisation]
+
+  - company: PIECE OF CAKE STUDIOS
+    url: https://www.pieceofcake-studios.com
+    role: Programmeur moteur
+    period: "Mai 2022 - Mars 2024"
+    start: "2022-05"
+    end: "2024-03"
+    location: Lyon, France
+    reference:
+      name: Xavier Lemaitre
+      role: CTO
+      url: https://linkedin.com/in/xlemaitre
+    highlights:
+      - "Contribution à **Fantastic Haven** : implémentation de nouveaux systèmes de gameplay et optimisation du jeu."
+      - "Portage console de **My Fantastic Ranch** et **Hacktag**, et correction des bugs remontés par l'équipe QA."
+      - "Aide au développement d'outils et de plugins, et intégration des fonctionnalités SDK pour Switch, PS4, PS5 et Xbox."
+    tech: [C#, C++, SDK consoles, Outils, Optimisation]
+
+  - company: ICONIK STUDIO
+    url: https://iconik.com
+    role: Programmeur gameplay
+    period: "Avril 2020 - Août 2021"
+    start: "2020-04"
+    end: "2021-08"
+    location: Saint-Étienne, France
+    reference:
+      name: Curtis Pelissier
+      role: Lead Developer
+      url: https://linkedin.com/in/curtis-pelissier
+    highlights:
+      - "Implémentation de nouveaux comportements d'IA ennemie et intégration de systèmes de gameplay pour **KING PONG**."
+      - "Développement d'outils de personnalisation du comportement des IA via scripting visuel (Behavior Trees)."
+      - "Optimisation des performances du jeu pour Meta Quest 1 et 2."
+    tech: [C#, Unity, Behavior Trees, VR, Optimisation]
+
+education:
+  - school: UNIVERSITÉ LYON II
+    url: https://icom.univ-lyon2.fr/formation/master-2-informatique-gamagora-1
+    degree: "Master Informatique / Ingénierie du jeu vidéo (GAMAGORA)"
+    period: "2021 - 2022"
+    description: >-
+      Être capable d'assurer l'ensemble des tâches de programmation nécessaires au développement
+      d'un jeu vidéo, pour le jeu lui-même comme pour les outils logiciels associés.
+      Stage chez Piece of Cake Studios (5 mois).
+
+  - school: CNAM SAINT-ÉTIENNE
+    url: https://cnam-auvergnerhonealpes.com/licence-generale-informatique-g02501
+    degree: Licence générale Informatique
+    period: "2020 - 2021"
+    description: >-
+      Être capable d'assurer les tâches de programmation nécessaires au développement logiciel.
+      Alternance chez Iconik Studio (1 an).
+
+  - school: IUT LE PUY-EN-VELAY
+    url: https://www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/iut-clermont-auvergne/but/but-informatique-le-puy
+    degree: DUT Informatique
+    period: "2018 - 2020"
+    description: >-
+      Concevoir et développer des logiciels 2D et 3D en acquérant des compétences en programmation
+      et en synthèse d'image via C++, C#, OpenGL et Unity. Stage chez Iconik Studio (3 mois).
+
+  - school: BELLECOUR ÉCOLE
+    url: https://www.bellecour.fr/formation/bachelor-game-development
+    degree: Bachelor Game Design
+    period: "2015 - 2018"
+    description: >-
+      Rédiger des documents de Game et Level Design, et prototyper des jeux et des niveaux
+      avec Unity 5 et Unreal Engine 4.
+
+skills:
+  - name: Langages
+    items: [C#, "C/C++", Shaders, Bash, Markdown]
+  - name: Moteurs de jeu
+    items: [Unity, Unreal Engine 5]
+  - name: Logiciels & outils
+    items: [Perforce, Git, GitLab, Visual Studio, Rider, RenderDoc]
+  - name: Programmation de jeu
+    items:
+      - Systèmes de gameplay
+      - VR
+      - 3C
+      - GOAP
+      - Behavior Trees
+      - Débogage
+      - Développement multiplateforme
+      - Optimisation des performances
+  - name: Savoir-être
+    items: [Résolution de problèmes, Synthèse, Travail en équipe, Fiable, Curieux]
+
+languages:
+  - name: Français
+    level: Langue maternelle
+  - name: Anglais
+    level: Courant (Linguaskill C1)

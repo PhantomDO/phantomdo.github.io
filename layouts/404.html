@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container container--narrow" style="padding-block: var(--sp-8); text-align: center">
+  <p class="hero__eyebrow">404</p>
+  <h1 class="hero__title" style="font-size: var(--fs-2xl)">
+    {{ if eq site.Language.Lang "fr" }}Page introuvable{{ else }}Page not found{{ end }}
+  </h1>
+  <p class="hero__bio" style="margin-inline: auto">
+    {{ if eq site.Language.Lang "fr" }}
+      Ce lien ne mène nulle part. Le reste du site est bien là.
+    {{ else }}
+      This link leads nowhere. The rest of the site is still around.
+    {{ end }}
+  </p>
+  <p class="hero__actions" style="justify-content: center">
+    <a class="btn btn--primary" href="{{ site.Home.RelPermalink }}">
+      {{ partial "icon.html" "arrow-left" }}
+      {{ if eq site.Language.Lang "fr" }}Retour à l'accueil{{ else }}Back home{{ end }}
+    </a>
+  </p>
+</div>
+{{ end }}

@@ -1,0 +1,21 @@
+{{- /*
+  Links to the same page in the other language when a translation exists,
+  otherwise falls back to that language's home page.
+*/ -}}
+{{- $page := . -}}
+<nav class="lang-switcher" aria-label="{{ i18n "switch_language" }}">
+  {{- range hugo.Sites -}}
+    {{- $s := . -}}
+    {{- $url := $s.Home.RelPermalink -}}
+    {{- range $page.AllTranslations -}}
+      {{- if eq .Language.Lang $s.Language.Lang -}}
+        {{- $url = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if eq $s.Language.Lang $page.Language.Lang -}}
+      <span aria-current="true">{{ $s.Language.Label }}</span>
+    {{- else -}}
+      <a href="{{ $url }}" hreflang="{{ $s.Language.Lang }}">{{ $s.Language.Label }}</a>
+    {{- end -}}
+  {{- end -}}
+</nav>

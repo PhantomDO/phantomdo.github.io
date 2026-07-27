@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p>© {{ now.Year }} {{ site.Params.author }}</p>
+    <p>
+      {{ i18n "built_with" }}
+      <a href="https://github.com/{{ site.Params.social.github }}/{{ site.Params.social.github | lower }}.github.io"
+         rel="noopener" target="_blank">GitHub</a>
+    </p>
+  </div>
+</footer>

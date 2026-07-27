@@ -1,0 +1,86 @@
+{{ define "main" }}
+<div class="container">
+
+  <header class="project-header">
+    <a class="breadcrumb" href="{{ .Parent.RelPermalink }}">
+      {{ partial "icon.html" "arrow-left" }} {{ i18n "back_to_projects" }}
+    </a>
+    <h1 class="project-header__title">{{ .Title }}</h1>
+    {{ with .Params.lede }}<p class="project-header__lede">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="project-layout">
+    <div>
+      {{ with .Params.cover }}
+        {{ with resources.Get (printf "images/projects/%s" .) }}
+          {{ $img := .Resize "1200x q85 webp" }}
+          <img class="project-cover" src="{{ $img.RelPermalink }}"
+               width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Title }}">
+        {{ end }}
+      {{ end }}
+
+      <div class="prose">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <aside class="project-facts">
+      {{ with .Params.role }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_role" }}</div>
+          <div class="fact__value">{{ . }}</div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.studio }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_studio" }}</div>
+          <div class="fact__value">
+            {{ with $.Params.studio_url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ end }}
+            {{- $.Params.studio -}}
+            {{ if $.Params.studio_url }}</a>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.year }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_year" }}</div>
+          <div class="fact__value">{{ . }}</div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.engine }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_engine" }}</div>
+          <div class="fact__value">{{ . }}</div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.platforms }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_platforms" }}</div>
+          <ul class="tags" style="margin-block-start: var(--sp-2)">
+            {{ range . }}<li class="tag">{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{ with .Params.tech }}
+        <div class="fact">
+          <div class="fact__label">{{ i18n "project_tech" }}</div>
+          <ul class="tags" style="margin-block-start: var(--sp-2)">
+            {{ range . }}<li class="tag">{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{ with .Params.store }}
+        <a class="btn btn--primary" href="{{ . }}" rel="noopener" target="_blank">
+          {{ partial "icon.html" "steam" }} {{ i18n "project_store" }}
+        </a>
+      {{ end }}
+    </aside>
+  </div>
+</div>
+{{ end }}

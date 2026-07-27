@@ -1,0 +1,46 @@
+skip_to_content: "Skip to content"
+toggle_theme: "Toggle colour theme"
+switch_language: "Switch language"
+menu: "Menu"
+
+hero_greeting: "Hi, I'm Donnovan"
+hero_cta_projects: "See my work"
+hero_cta_cv: "Read my CV"
+
+section_selected_work: "Selected work"
+section_selected_work_sub: "Shipped titles I contributed to, from gameplay systems to console ports."
+section_experience: "Experience"
+section_education: "Education"
+section_skills: "Skills"
+section_languages: "Languages"
+section_about: "About"
+section_contact: "Contact"
+section_contact_sub: "Open to gameplay and engine programming roles."
+
+all_projects: "All projects"
+back_to_projects: "Back to projects"
+no_projects: "No projects published yet."
+
+project_role: "Role"
+project_studio: "Studio"
+project_year: "Year"
+project_engine: "Engine"
+project_platforms: "Platforms"
+project_tech: "Tech"
+project_store: "View on Steam"
+project_contributions: "My contributions"
+project_count:
+  one: "{{ . }} project"
+  other: "{{ . }} projects"
+
+cv_download: "Print / Save as PDF"
+cv_reference: "Reference"
+cv_references_note: "Further references available on request."
+cv_present: "Present"
+
+email_me: "Email me"
+copy_email: "Copy email address"
+email_copied: "Copied"
+
+reading_lang_notice: "This page is not available in English yet — showing the French version."
+built_with: "Built with Hugo. Source on GitHub."

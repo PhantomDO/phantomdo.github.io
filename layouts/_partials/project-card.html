@@ -1,0 +1,34 @@
+{{- $p := . -}}
+<article class="card">
+  <div class="card__media{{ if not $p.Params.cover }} card__media--fallback{{ end }}">
+    {{- with $p.Params.cover -}}
+      {{- with resources.Get (printf "images/projects/%s" .) -}}
+        {{- $img := .Resize "720x q82 webp" -}}
+        <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"
+             alt="{{ $p.Title }}" loading="lazy" decoding="async">
+      {{- end -}}
+    {{- else -}}
+      <span class="card__monogram" aria-hidden="true">
+        {{- range first 2 (split (replaceRE `[^A-Za-z ]` "" $p.Title) " ") }}{{ substr . 0 1 | upper }}{{ end -}}
+      </span>
+    {{- end -}}
+  </div>
+
+  <div class="card__body">
+    <h3 class="card__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+
+    <p class="card__meta">
+      {{ with $p.Params.studio }}<span>{{ . }}</span>{{ end }}
+      {{ with $p.Params.year }}<span>{{ . }}</span>{{ end }}
+      {{ with $p.Params.engine }}<span>{{ . }}</span>{{ end }}
+    </p>
+
+    <p class="card__excerpt">{{ $p.Params.lede | default $p.Summary | plainify | truncate 140 }}</p>
+
+    {{ with $p.Params.tech }}
+      <ul class="tags">
+        {{ range first 4 . }}<li class="tag">{{ . }}</li>{{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</article>

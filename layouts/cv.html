@@ -1,0 +1,120 @@
+{{ define "main" }}
+{{ $cv := index hugo.Data.cv site.Language.Lang }}
+
+<div class="container container--narrow">
+  <header class="project-header">
+    <h1 class="project-header__title">{{ .Title }}</h1>
+    <p class="project-header__lede">
+      {{ site.Params.author }} — {{ site.Params.tagline }} · {{ site.Params.location }}
+      · <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+    </p>
+    {{ with .Content }}<div class="prose" style="margin-block-start: var(--sp-4)">{{ . }}</div>{{ end }}
+
+    <div class="cv-actions no-print">
+      <button class="btn btn--primary" type="button" onclick="window.print()">
+        {{ partial "icon.html" "print" }} {{ i18n "cv_download" }}
+      </button>
+      {{ partial "social.html" . }}
+    </div>
+  </header>
+
+  {{ with $cv.experience }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_experience" }}</h2>
+    {{ range . }}
+      <article class="entry">
+        <div class="entry__aside">
+          <span class="entry__period">{{ .period }}</span>
+          {{ with .location }}<span>{{ . }}</span>{{ end }}
+        </div>
+        <div>
+          <h3 class="entry__title">
+            {{ with .url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ end }}
+            {{- .company -}}
+            {{ if .url }}</a>{{ end }}
+          </h3>
+          <p class="entry__role">{{ .role }}</p>
+
+          <ul class="entry__list">
+            {{ range .highlights }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+
+          {{ with .tech }}
+            <ul class="tags entry__tags">
+              {{ range . }}<li class="tag">{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+
+          {{ with .reference }}
+            <p class="entry__ref">
+              {{ partial "icon.html" "user" }}
+              <span>
+                {{ i18n "cv_reference" }} —
+                {{ if .url }}
+                  <a href="{{ .url }}" rel="noopener" target="_blank">{{ .name }}</a>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}, {{ .role }}
+              </span>
+            </p>
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ with $cv.education }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_education" }}</h2>
+    {{ range . }}
+      <article class="entry">
+        <div class="entry__aside">
+          <span class="entry__period">{{ .period }}</span>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            {{ with .url }}<a href="{{ . }}" rel="noopener" target="_blank">{{ end }}
+            {{- .school -}}
+            {{ if .url }}</a>{{ end }}
+          </h3>
+          <p class="entry__role">{{ .degree }}</p>
+          <p style="color: var(--text-muted)">{{ .description }}</p>
+        </div>
+      </article>
+    {{ end }}
+  </section>
+  {{ end }}
+
+  {{ with $cv.skills }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_skills" }}</h2>
+    <div class="skill-grid">
+      {{ range . }}
+        <div class="skill-group">
+          <h3 class="skill-group__name">{{ .name }}</h3>
+          <ul class="tags">
+            {{ range .items }}<li class="tag">{{ . }}</li>{{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with $cv.languages }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_languages" }}</h2>
+    <ul class="lang-list">
+      {{ range . }}
+        <li><strong>{{ .name }}</strong><span>{{ .level }}</span></li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <p class="entry__ref" style="margin-block: var(--sp-6) var(--sp-8)">
+    {{ i18n "cv_references_note" }}
+  </p>
+</div>
+{{ end }}

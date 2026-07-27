@@ -1,0 +1,77 @@
+baseURL = "https://phantomdo.github.io/"
+title = "Donnovan Feuillastre"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableEmoji = true
+
+# A portfolio of a handful of projects does not need faceted browsing.
+disableKinds = ["taxonomy", "term"]
+
+[pagination]
+  pagerSize = 12
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[params]
+  author = "Donnovan Feuillastre"
+  email = "dfeuillastre.pro@proton.me"
+  location = "France"
+  profileImage = "images/profile.jpg"
+
+  [params.social]
+    github = "PhantomDO"
+    linkedin = "donnovan-feuillastre"
+
+[languages]
+  [languages.en]
+    label = "EN"
+    locale = "en-US"
+    contentDir = "content/en"
+    weight = 1
+    title = "Donnovan Feuillastre"
+    [languages.en.params]
+      tagline = "Game Programmer"
+      description = "Game programmer specialised in gameplay systems, engine work and cross-platform shipping. Unity, Unreal Engine 5, C++ and C#."
+    [[languages.en.menus.main]]
+      name = "Projects"
+      pageRef = "/projects"
+      weight = 10
+    [[languages.en.menus.main]]
+      name = "CV"
+      pageRef = "/cv"
+      weight = 20
+    [[languages.en.menus.main]]
+      name = "About"
+      pageRef = "/about"
+      weight = 30
+
+  [languages.fr]
+    label = "FR"
+    locale = "fr-FR"
+    contentDir = "content/fr"
+    weight = 2
+    title = "Donnovan Feuillastre"
+    [languages.fr.params]
+      tagline = "Programmeur de jeux vidéo"
+      description = "Programmeur de jeux vidéo spécialisé en systèmes de gameplay, travail moteur et portage multiplateforme. Unity, Unreal Engine 5, C++ et C#."
+    [[languages.fr.menus.main]]
+      name = "Projets"
+      pageRef = "/projects"
+      weight = 10
+    [[languages.fr.menus.main]]
+      name = "CV"
+      pageRef = "/cv"
+      weight = 20
+    [[languages.fr.menus.main]]
+      name = "À propos"
+      pageRef = "/about"
+      weight = 30
+
+[outputs]
+  home = ["HTML", "RSS"]

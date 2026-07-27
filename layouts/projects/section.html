@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">{{ .Title }}</h2>
+      {{ with .Content }}<div class="section__sub">{{ . }}</div>{{ end }}
+      <p class="card__meta" style="margin-block-start: var(--sp-3)">
+        {{ i18n "project_count" (len .RegularPagesRecursive) }}
+      </p>
+    </div>
+
+    {{ $projects := sort .RegularPagesRecursive "Weight" }}
+    {{ if $projects }}
+      <div class="project-grid">
+        {{ range $projects }}
+          {{ partial "project-card.html" . }}
+        {{ end }}
+      </div>
+    {{ else }}
+      <p>{{ i18n "no_projects" }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

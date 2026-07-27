@@ -1,0 +1,19 @@
+<div class="contact-card">
+  <h2 class="section__title" style="justify-content:center">{{ i18n "section_contact" }}</h2>
+  <p class="section__sub" style="text-align:center">{{ i18n "section_contact_sub" }}</p>
+
+  <div class="hero__actions" style="justify-content:center">
+    <a class="btn btn--primary" href="mailto:{{ site.Params.email }}">
+      {{ partial "icon.html" "mail" }} {{ site.Params.email }}
+    </a>
+    <button class="btn btn--ghost" type="button"
+            data-copy="{{ site.Params.email }}"
+            data-copied-label="{{ i18n "email_copied" }}"
+            aria-label="{{ i18n "copy_email" }}">
+      {{ partial "icon.html" "copy" }}
+      <span data-copy-label>{{ i18n "copy_email" }}</span>
+    </button>
+  </div>
+
+  {{ partial "social.html" . }}
+</div>

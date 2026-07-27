@@ -1,0 +1,80 @@
+{{- $title := .Title -}}
+{{- $siteTitle := site.Title -}}
+{{- if .IsHome -}}
+  {{- $title = printf "%s — %s" $siteTitle site.Params.tagline -}}
+{{- else -}}
+  {{- $title = printf "%s — %s" .Title $siteTitle -}}
+{{- end -}}
+{{- $description := .Description | default .Params.lede | default site.Params.description -}}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description | plainify }}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Apply the stored theme before first paint so there is no flash. */}}
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") {
+        document.documentElement.setAttribute("data-theme", t);
+      }
+    } catch (e) {}
+  })();
+</script>
+
+{{ with resources.Get "css/main.css" }}
+  {{ $css := . }}
+  {{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"
+    {{- with $css.Data.Integrity }} integrity="{{ . }}"{{ end }}>
+{{ end }}
+
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
+
+{{/* Language alternates */}}
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{/* Open Graph / Twitter */}}
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="{{ replace (site.Language.Locale | default site.Language.Lang) "-" "_" }}">
+{{- $og := "" -}}
+{{- with .Params.cover -}}
+  {{- with resources.Get (printf "images/projects/%s" .) -}}
+    {{- $og = .Permalink -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $og -}}
+  {{- $og = (printf "%s%s" site.BaseURL site.Params.profileImage) -}}
+{{- end }}
+<meta property="og:image" content="{{ $og }}">
+<meta name="twitter:card" content="summary_large_image">
+
+{{/* Structured data: helps recruiters' tooling and search engines read the CV. */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{{ dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" site.Params.author
+    "jobTitle" site.Params.tagline
+    "email" (printf "mailto:%s" site.Params.email)
+    "url" site.BaseURL
+    "address" (dict "@type" "PostalAddress" "addressCountry" site.Params.location)
+    "sameAs" (slice
+      (printf "https://github.com/%s" site.Params.social.github)
+      (printf "https://www.linkedin.com/in/%s" site.Params.social.linkedin))
+  | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}

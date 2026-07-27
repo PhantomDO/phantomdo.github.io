@@ -1,0 +1,46 @@
+skip_to_content: "Aller au contenu"
+toggle_theme: "Changer de thème"
+switch_language: "Changer de langue"
+menu: "Menu"
+
+hero_greeting: "Bonjour, je suis Donnovan"
+hero_cta_projects: "Voir mes projets"
+hero_cta_cv: "Lire mon CV"
+
+section_selected_work: "Projets sélectionnés"
+section_selected_work_sub: "Des jeux sortis auxquels j'ai contribué, des systèmes de gameplay aux portages console."
+section_experience: "Expérience"
+section_education: "Formation"
+section_skills: "Compétences"
+section_languages: "Langues"
+section_about: "À propos"
+section_contact: "Contact"
+section_contact_sub: "Ouvert aux postes de programmeur gameplay et moteur."
+
+all_projects: "Tous les projets"
+back_to_projects: "Retour aux projets"
+no_projects: "Aucun projet publié pour le moment."
+
+project_role: "Rôle"
+project_studio: "Studio"
+project_year: "Année"
+project_engine: "Moteur"
+project_platforms: "Plateformes"
+project_tech: "Technos"
+project_store: "Voir sur Steam"
+project_contributions: "Mes contributions"
+project_count:
+  one: "{{ . }} projet"
+  other: "{{ . }} projets"
+
+cv_download: "Imprimer / Enregistrer en PDF"
+cv_reference: "Référence"
+cv_references_note: "Autres références disponibles sur demande."
+cv_present: "Aujourd'hui"
+
+email_me: "M'écrire"
+copy_email: "Copier l'adresse e-mail"
+email_copied: "Copié"
+
+reading_lang_notice: "Cette page n'est pas encore disponible en français — version anglaise affichée."
+built_with: "Construit avec Hugo. Sources sur GitHub."
