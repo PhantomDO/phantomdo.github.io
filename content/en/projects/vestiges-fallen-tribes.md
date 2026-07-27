@@ -22,8 +22,8 @@ and full VR immersion, and released in April 2025.
 
 ## My contributions
 
-- **Optimised performance through component profiling**, improving frame stability.
-- Worked with the design and QA teams to keep features consistent and code quality high.
+- **Enhanced performance by profiling and optimising CPU, GPU and memory.**
+- Worked closely with the design, QA and art teams to maintain high code quality.
 
 ## Why it was interesting
 

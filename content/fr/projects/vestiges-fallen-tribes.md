@@ -22,10 +22,8 @@ aussi bien sur écran classique qu'en immersion VR complète, et est sorti en av
 
 ## Mes contributions
 
-- **Optimisation des performances par profilage des composants**, avec un gain de stabilité du
-  framerate.
-- Collaboration avec les équipes design et QA pour garantir la cohérence des features et la
-  qualité du code.
+- **Amélioration des performances par profilage et optimisation du CPU, du GPU et de la mémoire.**
+- Collaboration étroite avec les équipes design, QA et art pour maintenir la qualité du code.
 
 ## Pourquoi c'était intéressant
 

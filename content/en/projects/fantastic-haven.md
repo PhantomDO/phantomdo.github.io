@@ -5,7 +5,7 @@ featured: true
 lede: "New gameplay systems and optimisation on a fantasy creature-sanctuary management game."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Game Engine Developer"
+role: "Engine Developer"
 year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Linux / SteamOS"]

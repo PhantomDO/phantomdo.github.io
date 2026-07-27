@@ -4,11 +4,11 @@ weight: 60
 featured: true
 lede: "A custom nodal editor, data-driven combat systems and network optimisation on a VR table-tennis game."
 studio: "Iconik Studio"
-role: "Game Developer"
+role: "Gameplay Developer"
 year: "2020-2021"
 engine: "Unity"
 platforms: ["PC VR", "Meta Quest 1", "Meta Quest 2"]
-tech: ["C#", "AI systems", "Networking", "Mirror", "PlayFab", "VR"]
+tech: ["C#", "Behavior Trees", "AI systems", "Networking", "Mirror", "PlayFab", "VR"]
 store: "https://store.steampowered.com/app/1501390/KING_PONG/"
 cover: "king-pong.jpg"
 ---
@@ -22,8 +22,8 @@ arena.
 
 ## My contributions
 
-- Designed a **custom nodal editor** to streamline the designers' workflow and integrate the
-  AI systems, so opponents could be tuned without going through a programmer.
+- Developed the **AI behavior trees** and designed a custom **node-based editor** for them, so
+  opponents could be tuned without going through a programmer.
 - Developed the **"Ultimate Attack" combat systems** using finite state machines and a
   data-driven approach.
 - **Optimised network replication** through **Mirror** and **PlayFab** for standalone headset

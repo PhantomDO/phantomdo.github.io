@@ -58,7 +58,7 @@ experience:
       role: Lead Developer
       url: https://linkedin.com/in/curtis-pelissier
     highlights:
-      - "Conception d'un **éditeur nodal sur mesure** pour fluidifier le travail des game designers et intégrer les systèmes d'IA."
+      - "Développement des **arbres de comportement (Behavior Trees)** de l'IA et conception d'un **éditeur nodal sur mesure**."
       - "Développement des systèmes de combat **« Ultimate Attack »** via machines à états finis et approche data-driven."
       - "Optimisation de la réplication réseau via **Mirror** et **PlayFab** pour les performances sur casque autonome."
     tech: [Unity, C#, Systèmes d'IA, Networking, Optimisation, VR]

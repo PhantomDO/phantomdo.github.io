@@ -4,7 +4,7 @@ weight: 50
 lede: "Console adaptation and platform compliance on an asymmetric two-player co-op stealth game."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Game Engine Developer"
+role: "Engine Developer"
 year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]

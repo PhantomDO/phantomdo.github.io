@@ -23,9 +23,9 @@ management and combat.
 
 ## My contributions
 
-- **Adapted the gameplay mechanics** for the **Omni One** VR treadmill, working within the
-  constraints of the hardware.
-- Worked with the design and QA teams to keep features consistent and code quality high.
+- **Adapted the gameplay mechanics and interactions** for the **Omni One** VR treadmill, working
+  within the constraints of the hardware.
+- Worked closely with the design, QA and art teams to maintain high code quality.
 
 ## Why it was interesting
 

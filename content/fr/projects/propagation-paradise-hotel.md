@@ -23,10 +23,9 @@ ressources et combat.
 
 ## Mes contributions
 
-- **Adaptation des mécaniques de gameplay** pour le tapis VR **Omni One**, dans les contraintes
-  du matériel.
-- Collaboration avec les équipes design et QA pour garantir la cohérence des features et la
-  qualité du code.
+- **Adaptation des mécaniques de gameplay et des interactions** pour le tapis VR **Omni One**,
+  dans les contraintes du matériel.
+- Collaboration étroite avec les équipes design, QA et art pour maintenir la qualité du code.
 
 ## Pourquoi c'était intéressant
 

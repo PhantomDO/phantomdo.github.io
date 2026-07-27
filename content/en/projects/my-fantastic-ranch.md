@@ -4,7 +4,7 @@ weight: 40
 lede: "Console adaptation, platform compliance and a cross-platform achievement manager on a fantasy ranch management game published by Nacon."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
-role: "Game Engine Developer"
+role: "Engine Developer"
 year: "2022-2024"
 engine: "Unity"
 platforms: ["Windows", "Nintendo Switch", "PS4", "PS5", "Xbox"]

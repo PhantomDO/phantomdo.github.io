@@ -8,7 +8,7 @@ role: "Développeur jeux vidéo"
 year: "2020-2021"
 engine: "Unity"
 platforms: ["PC VR", "Meta Quest 1", "Meta Quest 2"]
-tech: ["C#", "Systèmes d'IA", "Networking", "Mirror", "PlayFab", "VR"]
+tech: ["C#", "Behavior Trees", "Systèmes d'IA", "Networking", "Mirror", "PlayFab", "VR"]
 store: "https://store.steampowered.com/app/1501390/KING_PONG/"
 cover: "king-pong.jpg"
 ---
@@ -22,9 +22,9 @@ multijoueur compétitif en ligne dans une arène au style Tron.
 
 ## Mes contributions
 
-- Conception d'un **éditeur nodal sur mesure** pour fluidifier le travail des game designers et
-  intégrer les systèmes d'IA, afin qu'ils puissent régler les adversaires sans passer par un
-  programmeur.
+- Développement des **arbres de comportement (Behavior Trees)** de l'IA et conception d'un
+  **éditeur nodal sur mesure** pour les piloter, afin que les game designers puissent régler les
+  adversaires sans passer par un programmeur.
 - Développement des **systèmes de combat « Ultimate Attack »** via machines à états finis et
   approche data-driven.
 - **Optimisation de la réplication réseau** via **Mirror** et **PlayFab** pour les performances
