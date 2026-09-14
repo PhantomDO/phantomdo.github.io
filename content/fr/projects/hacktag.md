@@ -1,14 +1,14 @@
 ---
 title: "Hacktag"
 weight: 50
-lede: "Adaptation console et conformité plateforme sur un jeu d'infiltration coopératif asymétrique à deux."
+lede: "Travaux de portage console et de mise en conformité plateforme sur un jeu d'infiltration coopératif asymétrique à deux joueurs. Le portage console n'a pas été publié."
 studio: "Piece of Cake Studios"
 studio_url: "https://www.pieceofcake-studios.com"
 role: "Développeur moteur de jeux"
 year: "2022-2024"
 engine: "Unity"
-platforms: ["Windows", "macOS", "Nintendo Switch", "PS4", "PS5", "Xbox"]
-tech: ["C#", "C++", "SDK consoles", "Réseau coop", "CI/CD"]
+platforms: ["Windows", "macOS"]
+tech: ["C#", "Asset Bundles", "Rendu", "Split screen", "SDK consoles", "Optimisation"]
 store: "https://store.steampowered.com/app/622770/Hacktag/"
 cover: "hacktag.jpg"
 ---
@@ -23,15 +23,24 @@ casse.
 
 ## Mes contributions
 
-- **Adaptation du jeu pour les consoles de 8ᵉ et 9ᵉ génération**, en conformité complète avec les
-  exigences des plateformes.
-- Intégration du **gestionnaire de succès cross-platform** et suivi du titre jusqu'à la
-  **certification console**.
-- Contribution aux outils internes et à l'amélioration des pipelines de build **GitLab CI**.
+- Portage console côté moteur, rendu et performance (un second développeur prenait la partie
+  online).
+- Migration du projet d'Unity 2018 vers Unity 2022, quatre versions majeures.
+- Passage du packaging des ressources en Asset Bundles.
+- Bascule du rendu deferred vers forward sur une scène à forte densité de lumières, et refonte du
+  budget d'éclairage en conséquence.
+- Prise en charge du split screen sur console, Nintendo Switch en particulier, où la charge de
+  rendu double sur le matériel cible le plus faible.
 
 ## Pourquoi c'était intéressant
 
-Un jeu coopératif asymétrique augmente la difficulté d'un portage console. Deux joueurs sur deux
-écrans différents, potentiellement sur deux plateformes différentes, doivent rester parfaitement
-synchronisés. Le réseau, la gestion de session et les services en ligne de chaque plateforme
-doivent donc être revalidés cible par cible, jamais supposés fonctionnels.
+Tous les portages n'aboutissent pas. Sur celui-ci, le nombre de cas spécifiques aux plateformes a
+fini par dépasser le planning, et le build console a été mis de côté.
+
+Ce qui reste intéressant, c'est ce qu'un rendu forward fait à une scène pensée pour du deferred.
+Le deferred absorbe un grand nombre de lumières presque gratuitement ; le forward non. J'ai tenté
+de l'instancing de lumières sur GPU via un compute shader : les volumes de lumière devenaient
+visibles en screen-space sur certaines scènes, avec un culling incohérent. Aller plus loin relevait
+du tech art, qui n'est pas mon métier. La réponse retenue était plus terne et plus juste : moins de
+lumières, plus grandes, réglées pour conserver le rendu, plus de la résolution dynamique. Le split
+screen rendait chacun de ces budgets deux fois plus serré.

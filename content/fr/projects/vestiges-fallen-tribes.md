@@ -7,7 +7,7 @@ studio_url: "https://www.wanadevstudio.com"
 role: "Développeur jeux vidéo"
 year: "2024"
 engine: "Unreal Engine 5"
-platforms: ["PC", "VR (OpenXR / Meta)"]
+platforms: ["PC", "VR (OpenXR / Meta)", "Pico"]
 tech: ["C++", "Blueprint", "Profilage", "Optimisation", "VR"]
 store: "https://store.steampowered.com/app/2511780/Vestiges_Fallen_Tribes/"
 cover: "vestiges-fallen-tribes.jpg"
@@ -23,6 +23,11 @@ aussi bien sur écran classique qu'en immersion VR complète, et est sorti en av
 ## Mes contributions
 
 - **Amélioration des performances par profilage et optimisation du CPU, du GPU et de la mémoire.**
+- L'entrée en phase de résolution faisait respawn toutes les unités et leurs behavior trees d'un
+  coup. Pooling des unités et de leurs arbres pour supprimer le pic.
+- Passage des textures d'unités en texture arrays, avec un artiste.
+- Le framerate est passé d'environ 15 fps à environ 30 fps sur Pico, et les crashs au changement de
+  phase ont cessé. L'optimisation a été poursuivie par l'équipe après mon départ.
 - Collaboration étroite avec les équipes design, QA et art pour maintenir la qualité du code.
 
 ## Pourquoi c'était intéressant

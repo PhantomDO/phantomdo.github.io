@@ -8,7 +8,7 @@ studio_url: "https://www.wanadevstudio.com"
 role: "Développeur jeux vidéo"
 year: "2024"
 engine: "Unreal Engine 4"
-platforms: ["Omni One", "PC VR", "Meta Quest"]
+platforms: ["Virtuix Omni One", "PC VR", "Meta Quest"]
 tech: ["C++", "Blueprint", "VR", "Profilage"]
 store: "https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/"
 cover: "propagation-paradise-hotel.jpg"
@@ -23,8 +23,14 @@ ressources et combat.
 
 ## Mes contributions
 
-- **Adaptation des mécaniques de gameplay et des interactions** pour le tapis VR **Omni One**,
-  dans les contraintes du matériel.
+- Portage du déplacement joueur et d'une partie de l'UI sur le tapis de locomotion **Virtuix
+  Omni One**, jusqu'à publication sur le store de la plateforme.
+- Développé sans le matériel : le tapis était aux États-Unis et l'OS cible indisponible au départ,
+  soit un build par soir et un retour par jour.
+- Simulation des entrées du tapis au joystick pour travailler en local ; le jeu a été terminé de
+  bout en bout à travers cette simulation.
+- Livraison de commandes de debug aux testeurs distants pour qu'ils règlent eux-mêmes la vitesse de
+  déplacement, au lieu d'attendre une journée par valeur.
 - Collaboration étroite avec les équipes design, QA et art pour maintenir la qualité du code.
 
 ## Pourquoi c'était intéressant
