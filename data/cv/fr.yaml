@@ -1,11 +1,36 @@
 # Source unique de vérité pour le CV français.
 # Modifier ce fichier met à jour la page /fr/cv/ et les points forts de l'accueil.
-# Aligné sur le CV FlowCV de juillet 2026.
+# Aligné sur la réécriture du CV de septembre 2026, version A (jeu vidéo).
 
 summary: >-
-  Développeur logiciel et jeux vidéo, spécialisé dans la conception de systèmes performants et
-  modulaires. Je cherche des environnements qui mêlent créativité et exigence technique, avec des
-  méthodes de travail structurées.
+  Développeur jeu vidéo, 5 ans d'expérience en C++/Unreal Engine et C#/Unity. 5 jeux shippés, dont
+  un portage console multiplateforme (Switch, PS4, PS5, Xbox) mené jusqu'à la validation
+  constructeur et un portage sur tapis de locomotion VR. Spécialisé dans les systèmes gameplay
+  modulaires, l'outillage interne et l'optimisation temps réel.
+
+# Les plateformes listées sont celles des sorties commerciales, pas celles sur
+# lesquelles j'ai travaillé : le portage console de Hacktag n'a jamais été publié.
+games:
+  - title: "My Fantastic Ranch: Unicorns & Dragons"
+    page: my-fantastic-ranch
+    note: "éd. Nacon"
+    platforms: "PC, Nintendo Switch, PS4, PS5, Xbox One/Series"
+  - title: "Propagation: Paradise Hotel"
+    page: propagation-paradise-hotel
+    platforms: "PC VR, Virtuix Omni One"
+  - title: "Vestiges: Fallen Tribes"
+    page: vestiges-fallen-tribes
+    platforms: "PC VR, Pico"
+  - title: "Hacktag"
+    page: hacktag
+    platforms: "PC"
+  - title: "KING PONG"
+    page: king-pong
+    platforms: "VR"
+  - title: "Fantastic Haven"
+    page: fantastic-haven
+    note: "à paraître"
+    platforms: "PC"
 
 experience:
   - company: SPINWARE
@@ -13,128 +38,126 @@ experience:
     role: Développeur jeux vidéo
     period: "Décembre 2025 - Aujourd'hui"
     location: Puteaux, France
+    contract: CDI
     highlights:
-      - "Implémentation de systèmes de jeu (**IA**, **UI**, **outils**) sous Unreal Engine 5."
-      - "Amélioration de l'expérience utilisateur et de la réactivité des interactions."
-    tech: [Unreal Engine 5, C++, Blueprint, Networking, Git]
+      - "**Conçu à mon initiative un socle technique transverse** (modules runtime et éditeur) remplaçant les références dures d'assets par une résolution par GameplayTag et un chargement asynchrone à la demande, supprimant les dépendances en cascade qui alourdissaient les Blueprints et les temps de build."
+      - "**Développé l'outil éditeur Slate générique associé**, piloté par réflexion sur `UScriptStruct` : chaque type d'asset géré (sons, effets, items, emotes, matériaux, niveaux, dialogues) se déclare en une ligne, sans écrire d'interface. Renommage sécurisé par Core Redirects, undo/redo, drag & drop, suivi des assets manquants."
+      - "**Sorti l'intégration des assets de l'équipe technique** : un profil non-programmeur les saisit en autonomie, là où il fallait auparavant un développeur dans un Blueprint. Socle repris sur le projet suivant après la mise en pause du projet d'origine."
+      - "**Intégré Redpoint EOS** et développé la couche UI et le relais jeu/plugin du système de party en ligne : invitations in-game, rejoindre et quitter une session."
+      - "**Implémenté des interactions multijoueur via le Gameplay Ability System** (ragdoll répliqué sur explosion de proximité, chat vocal de proximité activable par objet) ainsi qu'un système d'inventaire, sur 3 projets."
+    tech: [Unreal Engine 5, C++, Slate, Blueprint, GameplayTags, GAS, Redpoint EOS, Git]
+
+  - company: FORMATION ET PROJET PERSONNEL
+    role: Recherche active
+    period: "Décembre 2024 - Novembre 2025"
+    contract: ""
+    highlights:
+      - "**Formation intensive au Gameplay Ability System d'Unreal Engine 5** en C++ (cursus Ulibarri, 105 h) : 72 h suivies couvrant l'intégralité du socle systémique, des Attribute Sets et Gameplay Effects aux Gameplay Tags, Gameplay Abilities, Ability Tasks, coûts et cooldowns, progression et niveaux, IA par Behavior Trees et EQS, interfaces en MVVM et réplication multijoueur."
+      - "***Souls Boss Arena***, prototype personnel sous Unreal Engine 5.6, C++/Blueprint, 254 commits, code source public : combat bâti sur GAS, ciblage lock-on et roulade, endurance et frames d'invincibilité, boss à deux phases piloté par behavior tree, outils de debug intégrés, support manette et clavier, VFX Niagara."
+      - "**Compétences mises en production dès la prise de poste suivante** : socle d'assets indexé par GameplayTag et interactions multijoueur en GAS livrés chez Spinware dans les mois qui ont suivi."
+    tech: [Unreal Engine 5, C++, Blueprint, GAS, Behavior Trees, Niagara]
 
   - company: WANADEV STUDIO
     url: https://www.wanadevstudio.com
     role: Développeur jeux vidéo
     period: "Septembre 2024 - Décembre 2024"
     location: Lyon, France
+    contract: CDI
     reference:
       name: Benoit Djerigian
       role: Lead Developer
       url: https://linkedin.com/in/bdjerigian/
     highlights:
-      - "Adaptation des mécaniques de gameplay de **Propagation: Paradise Hotel** pour le tapis VR **Omni One**, dans les contraintes du matériel."
-      - "Optimisation des performances de **Vestiges: Fallen Tribes** par profilage des composants, avec un gain de stabilité du framerate."
-      - "Collaboration avec les équipes design et QA pour garantir la cohérence des features et la qualité du code."
-    tech: [Unreal Engine 4, Unreal Engine 5, C++, Blueprint, VR, Optimisation, Profilage, Git]
+      - "**Porté le déplacement et une partie de l'UI de *Propagation: Paradise Hotel* sur le tapis de locomotion Virtuix Omni One**, jusqu'à publication sur le store de la plateforme. Développement mené sans accès au matériel, resté aux États-Unis, ni à l'OS cible, avec une boucle de test de 24 heures."
+      - "**Levé cette contrainte** en simulant les entrées du tapis au joystick (jeu terminé intégralement en simulation) et en livrant aux testeurs distants des commandes de debug leur permettant de calibrer eux-mêmes les paramètres de vitesse."
+      - "**Optimisé *Vestiges: Fallen Tribes* sur Pico** : pooling des unités et de leurs Behavior Trees pour supprimer le pic de respawn au changement de phase, passage des textures d'unités en texture arrays avec un artiste. **Framerate porté de 15 à 30 fps et suppression des crashs** ; optimisation poursuivie par l'équipe après mon départ."
+      - "Soutien QA et playtests internes sur un troisième projet, *Species: Unknown*."
+    tech: [Unreal Engine 4, Unreal Engine 5, C++, Blueprint, "VR standalone (Pico, Omni One)", SDK matériel, Pooling, Profilage]
 
   - company: PIECE OF CAKE STUDIOS
     url: https://www.pieceofcake-studios.com
-    role: Développeur moteur de jeux
+    role: Développeur moteur & outils
     period: "Mai 2022 - Mars 2024"
-    location: Paris 19, France
+    location: Paris, France
+    contract: Stage puis CDD
     reference:
       name: Xavier Lemaitre
       role: CTO
       url: https://linkedin.com/in/xlemaitre
     highlights:
-      - "Extension des capacités du moteur Unity : intégration d'**Epic Online Services** et shaders de **déformation de terrain**."
-      - "Adaptation de **My Fantastic Ranch** et **Hacktag** pour les consoles de 8ᵉ et 9ᵉ génération, en conformité complète avec les exigences des plateformes."
-      - "Développement d'un **gestionnaire de succès cross-platform** avec intégration directe des SDK et suivi de la certification console."
-      - "Amélioration des outils internes et des systèmes d'automatisation ; optimisation des pipelines de build **GitLab CI**."
-    tech: [Unity, C#, C++, Shader, CI/CD, Multiplateforme, Perforce]
+      - "**Porté *My Fantastic Ranch: Unicorns & Dragons* (éd. Nacon) sur consoles 8ᵉ et 9ᵉ génération** (Switch, PS4, PS5, Xbox) jusqu'à la validation constructeur : conformité plateforme complète, mise en veille et reprise, gestion des manettes, intégrité des sauvegardes, changement de compte. Seul sur le portage après le départ du second développeur."
+      - "**Développé un gestionnaire de succès multiplateforme** unifiant les SDK des plateformes de sortie derrière une interface unique, hors définition des trophées PS4 qui passe par l'outillage Sony dédié."
+      - "**Mené la migration d'un projet Unity de la version 2018 à la version 2022** sur un second titre : passage en Asset Bundles, bascule du rendu deferred vers forward sur une scène à forte densité de lumières, split screen console."
+      - "**Optimisé le rendu sous contrainte Nintendo Switch**, split screen compris, charge de rendu doublée : réduction du budget d'éclairage à rendu équivalent, résolution dynamique."
+      - "**Étendu la chaîne d'intégration continue GitLab aux builds console**, avec configurations et variantes de build par plateforme. Intégration des Epic Online Services dans Unity."
+    tech: [Unity, C#, C++, Shaders, "SDK consoles (Nintendo, Sony, Microsoft)", GitLab CI, Perforce]
 
   - company: ICONIK STUDIO
     role: Développeur jeux vidéo
     period: "Avril 2020 - Août 2021"
     location: La Ciotat, France
+    contract: Alternance (12 mois) puis CDD
     reference:
       name: Curtis Pelissier
       role: Lead Developer
       url: https://linkedin.com/in/curtis-pelissier
     highlights:
-      - "Développement des **arbres de comportement (Behavior Trees)** de l'IA et conception d'un **éditeur nodal sur mesure**."
-      - "Développement des systèmes de combat **« Ultimate Attack »** via machines à états finis et approche data-driven."
-      - "Optimisation de la réplication réseau via **Mirror** et **PlayFab** pour les performances sur casque autonome."
-    tech: [Unity, C#, Systèmes d'IA, Networking, Optimisation, VR]
+      - "**Développé un éditeur nodal de behavior trees en interne** sous Unity, pour éviter l'achat d'un plugin tiers : fenêtres d'éditeur custom, sérialisation du graphe, exécution des arbres. Utilisé sur **KING PONG** (VR)."
+      - "**Corrigé la désynchronisation de la physique de la balle en multijoueur** : réduction du nombre de RPC et passage du transport TCP à KCP (UDP fiable), supprimant les à-coups liés au head-of-line blocking. Désynchronisation ramenée à un niveau acceptable en VR."
+      - "Développé les systèmes de combat « Ultimate Attack » : machines à états, configuration data-driven."
+    tech: [Unity, C#, Éditeur custom, Mirror, PlayFab, VR]
 
+# Avec cinq ans d'expérience, la formation n'est plus un argument : une ligne
+# chacune, année de fin seulement.
 education:
   - school: UNIVERSITÉ LYON II
     url: https://icom.univ-lyon2.fr/formation/master-2-informatique-gamagora-1
-    degree: "Master Informatique / Ingénierie du Jeu Vidéo (GAMAGORA)"
-    period: "Septembre 2021 - Septembre 2022"
+    degree: "Master Informatique, Ingénierie du jeu vidéo (GAMAGORA)"
+    period: "2022"
     location: Bron, France
-    description: >-
-      Spécialisation en développement de jeux vidéo, axée sur les systèmes temps réel et les
-      outils logiciels. Programmation de moteur, shading temps réel, synthèse d'image, simulation
-      physique, IA de jeu et VR/AR. Pédagogie par projets, avec développement d'un jeu complet en
-      conditions de studio, expérimentations LabXP, stage obligatoire et présentation publique au
-      Gamagora Game Show.
 
   - school: CNAM SAINT-ÉTIENNE
     url: https://cnam-auvergnerhonealpes.com/licence-generale-informatique-g02501
     degree: Licence Informatique
-    period: "Septembre 2020 - Septembre 2021"
+    period: "2021"
     location: Saint-Étienne, France
-    description: >-
-      Socle complet en informatique : développement, programmation, réseaux, multimédia, systèmes,
-      architecture, génie logiciel, recherche opérationnelle, systèmes d'information et systèmes
-      industriels.
 
   - school: IUT LE PUY-EN-VELAY
     url: https://www.uca.fr/formation/nos-formations/par-ufr-ecoles-et-iut/iut-clermont-auvergne/but/but-informatique-le-puy
     degree: DUT Informatique
-    period: "Septembre 2018 - Septembre 2020"
+    period: "2020"
     location: Le Puy-en-Velay, France
-    description: >-
-      Bases solides en programmation (C++, Python, Qt, OpenGL), algorithmique, mathématiques et
-      génie logiciel. Projets d'apprentissage, stages de plus de 10 semaines et travaux pratiques
-      immersifs (VR, AR, motion capture). Création d'applications 3D interactives centrées sur le
-      temps réel, le multiplateforme, le traitement d'image et les pratiques numériques éthiques.
 
   - school: BELLECOUR ÉCOLE
     url: https://www.bellecour.fr/formation/bachelor-game-development
-    degree: Bachelor Game Design
-    period: "Septembre 2015 - Septembre 2018"
+    degree: "Bachelor Game Design, spécialité programmation"
+    period: "2018"
     location: Lyon, France
-    description: >-
-      Parcours « Tech & Programming » : Unity, Unreal, C#, C++ et Tech Art. Six projets majeurs
-      plus un projet de fin d'études, game jams et workshops. Programme axé sur le systems design,
-      le level design, le world-building, l'UX/UI, l'itération, le prototypage, la narration et la
-      collaboration.
 
 skills:
   - name: Langages
-    items: ["C++", "C#", Java, JavaScript, Python, Bash, SQL]
-  - name: Moteurs & outils
-    items: [Unreal Engine, Unity, Visual Studio, Perforce, Git, GitLab, CI]
-  - name: Compétences techniques
+    items: ["C++ (avancé)", "C# (avancé)", Python, Bash, SQL]
+  - name: Moteurs
+    items: ["Unreal Engine 4/5 (C++ et Blueprint)", Unity]
+  - name: Domaines
     items:
-      - Débogage
-      - Optimisation
-      - Automatisation de build
-      - Intégration multiplateforme
-      - Agile / Scrum
-  - name: Web & systèmes
-    items: ["API REST Node.js (notions)", ".NET (en cours)"]
-  - name: Savoir-être
-    items:
-      - Esprit d'analyse
-      - Curieux et adaptable
-      - Collaboratif et méthodique
-      - Souci du détail
-      - Orienté solution
+      - Systèmes gameplay
+      - "IA (FSM, behavior trees)"
+      - Outillage éditeur
+      - Portage et conformité console
+      - Profilage et optimisation temps réel
+      - Réplication réseau
+      - VR
+  - name: Outils
+    items: [Visual Studio, Perforce, Git/GitLab, GitLab CI, Unreal Insights]
+  - name: Méthodes
+    items: [Agile/Scrum, Code review, CI/CD]
 
 languages:
   - name: Français
     level: Langue maternelle
   - name: Anglais
-    level: Avancé (Linguaskill C1)
+    level: Professionnel (Linguaskill C1)
 
 interests:
   - Manga

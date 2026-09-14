@@ -3,12 +3,15 @@ toggle_theme: "Changer de thème"
 switch_language: "Changer de langue"
 menu: "Menu"
 
+availability: "Ouvert aux opportunités : programmation gameplay, outils et moteur. Basé près de Saint-Chamond : présentiel sur Lyon et Saint-Étienne, full remote ailleurs."
+
 hero_greeting: "Bonjour, je suis Donnovan"
 hero_cta_projects: "Voir mes projets"
 hero_cta_cv: "Lire mon CV"
 
 section_selected_work: "Projets sélectionnés"
 section_selected_work_sub: "Des jeux sortis auxquels j'ai contribué, des systèmes de gameplay aux portages console."
+section_games: "Jeux publiés"
 section_experience: "Expérience"
 section_education: "Formation"
 section_skills: "Compétences"
@@ -29,6 +32,7 @@ project_engine: "Moteur"
 project_platforms: "Plateformes"
 project_tech: "Technos"
 project_store: "Voir sur Steam"
+project_source: "Code source"
 project_contributions: "Mes contributions"
 project_count:
   one: "{{ . }} projet"
@@ -41,4 +45,4 @@ cv_present: "Aujourd'hui"
 
 email_me: "M'écrire"
 
-built_with: "Construit avec Hugo. Sources sur GitHub."
+built_with: "Construit avec Hugo. Sources du site sur GitHub."

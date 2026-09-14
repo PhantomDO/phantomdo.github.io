@@ -11,11 +11,32 @@
 
   <div class="project-layout">
     <div>
+      {{/* A short muted loop when the project has one, the still capsule
+           otherwise. The capsule doubles as the poster frame, so the page does
+           not reflow while the video loads. Controls are on deliberately: an
+           autoplaying loop longer than five seconds needs a way to stop it. */}}
+      {{ $cover := "" }}
       {{ with .Params.cover }}
         {{ with resources.Get (printf "images/projects/%s" .) }}
-          {{ $img := .Resize "616x q85 webp" }}
-          <img class="project-cover" src="{{ $img.RelPermalink }}"
-               width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Title }}">
+          {{ $cover = .Resize "616x q85 webp" }}
+        {{ end }}
+      {{ end }}
+
+      {{ $capture := "" }}
+      {{ with .Params.capture }}
+        {{ $capture = resources.Get (printf "videos/projects/%s" .) }}
+      {{ end }}
+
+      {{ if $capture }}
+        <video class="project-cover" autoplay loop muted playsinline controls preload="metadata"
+               {{- with $cover }} poster="{{ .RelPermalink }}"
+               width="{{ .Width }}" height="{{ .Height }}"{{ end }}>
+          <source src="{{ $capture.RelPermalink }}" type="{{ $capture.MediaType.Type }}">
+        </video>
+      {{ else }}
+        {{ with $cover }}
+          <img class="project-cover" src="{{ .RelPermalink }}"
+               width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}">
         {{ end }}
       {{ end }}
 
@@ -78,6 +99,13 @@
       {{ with .Params.store }}
         <a class="btn btn--primary" href="{{ . }}" rel="noopener" target="_blank">
           {{ partial "icon.html" "steam" }} {{ i18n "project_store" }}
+        </a>
+      {{ end }}
+
+      {{ with .Params.source }}
+        <a class="btn {{ if $.Params.store }}btn--ghost{{ else }}btn--primary{{ end }}"
+           href="{{ . }}" rel="noopener" target="_blank">
+          {{ partial "icon.html" "gitlab" }} {{ i18n "project_source" }}
         </a>
       {{ end }}
     </aside>
