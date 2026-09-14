@@ -3,12 +3,15 @@ toggle_theme: "Toggle colour theme"
 switch_language: "Switch language"
 menu: "Menu"
 
+availability: "Open to opportunities: gameplay, tools and engine programming. Based near Saint-Chamond, France: on-site around Lyon and Saint-Étienne, fully remote elsewhere."
+
 hero_greeting: "Hi, I'm Donnovan"
 hero_cta_projects: "See my work"
 hero_cta_cv: "Read my CV"
 
 section_selected_work: "Selected work"
 section_selected_work_sub: "Shipped titles I contributed to, from gameplay systems to console ports."
+section_games: "Shipped games"
 section_experience: "Experience"
 section_education: "Education"
 section_skills: "Skills"
@@ -29,6 +32,7 @@ project_engine: "Engine"
 project_platforms: "Platforms"
 project_tech: "Tech"
 project_store: "View on Steam"
+project_source: "Source code"
 project_contributions: "My contributions"
 project_count:
   one: "{{ . }} project"
@@ -41,4 +45,4 @@ cv_present: "Present"
 
 email_me: "Email me"
 
-built_with: "Built with Hugo. Source on GitHub."
+built_with: "Built with Hugo. Site source on GitHub."

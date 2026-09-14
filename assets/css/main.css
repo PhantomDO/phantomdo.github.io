@@ -441,6 +441,34 @@ main {
   align-items: center;
 }
 
+.availability {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  max-width: 62ch;
+  margin-block-end: var(--sp-5);
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+/* A status dot, not a decoration: it is what makes the line read as "available
+   now" at a glance rather than as one more paragraph. */
+.availability::before {
+  content: "";
+  flex: none;
+  /* Optically centred on the first line rather than on the whole block, which
+     drifts to the middle once the sentence wraps. */
+  margin-block-start: 0.45lh;
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .hero__eyebrow {
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
@@ -772,6 +800,8 @@ a.tag:hover {
 }
 
 .project-cover {
+  display: block;
+  height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   margin-block-end: var(--sp-6);
@@ -920,6 +950,30 @@ a.tag:hover {
   letter-spacing: 0.08em;
   color: var(--text-faint);
   margin-block-end: var(--sp-3);
+}
+
+.game-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.game-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.game-list span {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.game-list__note {
+  font-weight: 400;
 }
 
 .lang-list {
@@ -1138,6 +1192,10 @@ a.tag:hover {
 
   .entry + .entry {
     padding-block-start: 7pt;
+  }
+
+  .game-list li {
+    break-inside: avoid;
   }
 
   /* Chips read as clutter on paper; flatten them to a separated list. */

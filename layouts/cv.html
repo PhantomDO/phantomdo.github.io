@@ -24,6 +24,28 @@
     </div>
   </header>
 
+  {{ with $cv.games }}
+  <section class="cv-section">
+    <h2 class="cv-section__title">{{ i18n "section_games" }}</h2>
+    <ul class="game-list">
+      {{ range . }}
+        {{ $game := . }}
+        {{ $link := "" }}
+        {{ with $game.page }}
+          {{ with site.GetPage (printf "/projects/%s" .) }}{{ $link = .RelPermalink }}{{ end }}
+        {{ end }}
+        <li>
+          <strong>
+            {{- if $link }}<a href="{{ $link }}">{{ $game.title }}</a>{{ else }}{{ $game.title }}{{ end -}}
+            {{- with $game.note }} <span class="game-list__note">({{ . }})</span>{{ end -}}
+          </strong>
+          <span>{{ $game.platforms }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
   {{ with $cv.experience }}
   <section class="cv-section">
     <h2 class="cv-section__title">{{ i18n "section_experience" }}</h2>
@@ -32,6 +54,7 @@
         <div class="entry__aside">
           <span class="entry__period">{{ .period }}</span>
           {{ with .location }}<span>{{ . }}</span>{{ end }}
+          {{ with .contract }}<span>{{ . }}</span>{{ end }}
         </div>
         <div>
           <h3 class="entry__title">
@@ -84,7 +107,7 @@
             {{ if .url }}</a>{{ end }}
           </h3>
           <p class="entry__role">{{ .degree }}</p>
-          <p style="color: var(--text-muted)">{{ .description }}</p>
+          {{ with .description }}<p style="color: var(--text-muted)">{{ . }}</p>{{ end }}
         </div>
       </article>
     {{ end }}
